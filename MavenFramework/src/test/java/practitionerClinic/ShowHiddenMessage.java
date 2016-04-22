@@ -1,11 +1,9 @@
 package practitionerClinic;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.kinduct.MavenFramework.Excel;
 
 
@@ -74,7 +72,7 @@ public class ShowHiddenMessage {
 	
 		
 				
-		AssertJUnit.assertEquals("TEST MESSAGE", textmessage);
+		Assert.assertEquals("TEST MESSAGE", textmessage);
 				
 				
 	}

@@ -2,25 +2,23 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="196" started-at="2016-04-21T12:48:57Z" finished-at="2016-04-21T12:48:57Z">
+  <suite name="Default suite" duration-ms="13389" started-at="2016-04-22T14:55:07Z" finished-at="2016-04-22T14:55:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="196" started-at="2016-04-21T12:48:57Z" finished-at="2016-04-21T12:48:57Z">
-      <class name="adminClinic.AdminLogin">
-        <test-method status="FAIL" signature="adminlogin()[pri:0, instance:adminClinic.AdminLogin@22f71333]" name="adminlogin" duration-ms="171" started-at="2016-04-21T09:48:57Z" finished-at="2016-04-21T09:48:57Z">
-          <exception class="java.lang.IllegalStateException">
+    <test name="Default test" duration-ms="13389" started-at="2016-04-22T14:55:07Z" finished-at="2016-04-22T14:55:20Z">
+      <class name="patientClinic.Login">
+        <test-method status="FAIL" signature="login()[pri:0, instance:patientClinic.Login@380fb434]" name="login" duration-ms="13362" started-at="2016-04-22T11:55:07Z" finished-at="2016-04-22T11:55:20Z">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[The driver executable does not exist: /Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs.exe]]>
+              <![CDATA[/Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: /Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:245)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:104)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.<init>(PhantomJSDriver.java:94)
-	at adminClinic.AdminLogin.adminlogin(AdminLogin.java:39)
+              <![CDATA[java.io.FileNotFoundException: /Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.kinduct.MavenFramework.Excel.excelpatient(Excel.java:23)
+	at patientClinic.Login.login(Login.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,11 +45,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminlogin -->
-      </class> <!-- adminClinic.AdminLogin -->
+        </test-method> <!-- login -->
+      </class> <!-- patientClinic.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

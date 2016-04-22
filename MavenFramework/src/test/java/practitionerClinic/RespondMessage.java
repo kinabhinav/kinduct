@@ -1,11 +1,9 @@
 package practitionerClinic;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.kinduct.MavenFramework.Excel;
 
 //import adminClinic.PostMessage;

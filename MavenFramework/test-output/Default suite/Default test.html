@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 21 09:48:57 ADT 2016</td>
+<td>Started on:</td><td>Fri Apr 22 11:55:07 ADT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (196 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13389 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='adminClinic.AdminLogin.adminlogin()'><b>adminlogin</b><br>Test class: adminClinic.AdminLogin</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: /Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:245)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:104)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:94)
-	at adminClinic.AdminLogin.adminlogin(AdminLogin.java:39)
+<td title='patientClinic.Login.login()'><b>login</b><br>Test class: patientClinic.Login</td>
+<td><div><pre>java.io.FileNotFoundException: /Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at com.kinduct.MavenFramework.Excel.excelpatient(Excel.java:23)
+	at patientClinic.Login.login(Login.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,15 +106,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-</pre></div><a href='#' onClick='toggleBox("stack-trace11003494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11003494'><pre>java.lang.IllegalStateException: The driver executable does not exist: /Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:245)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:104)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:94)
-	at adminClinic.AdminLogin.adminlogin(AdminLogin.java:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1276709283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276709283'><pre>java.io.FileNotFoundException: /Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at com.kinduct.MavenFramework.Excel.excelpatient(Excel.java:23)
+	at patientClinic.Login.login(Login.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,8 +138,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 </pre></div></td>
-<td>0</td>
-<td>adminClinic.AdminLogin@22f71333</td></tr>
+<td>13</td>
+<td>patientClinic.Login@380fb434</td></tr>
 </table><p>
 </body>
 </html>

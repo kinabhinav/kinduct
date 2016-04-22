@@ -3,13 +3,9 @@ package patientClinic;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.kinduct.MavenFramework.Excel;
 
 public class Login {
@@ -71,24 +67,22 @@ public void wait(  String text)
 		
 		//patient
 		
-		driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[12]/td[5]/a[3]/span[1]")).click();
+		driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]")).click();
 		
-		//wait(driver,".//*[@id='users']/tbody/tr[12]/td[5]/a[3]/span[1]");
-		//boolean flag = false;
-		
+				
 		if (driver.getTitle().equalsIgnoreCase("Kinduct Clinic - Home")) {
 			
 			
 		  Excel e = new Excel();
 			
-			e.excel(1,5,"PASS");
+			e.excelpatient(1,5,"PASS");
 			
 		}
 		else
 		{
 			Excel e = new Excel();
 			
-			e.excel(1,2,"FAIL");
+			e.excelpatient(1,2,"FAIL");
 			
 		}
 		//Assert.assertTrue(flag, "Patient Login");

@@ -1,13 +1,7 @@
 package testMessage;
 
 import org.testng.annotations.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
-
 import practitionerClinic.HideMessage;
-import practitionerClinic.PracLogin;
 import practitionerClinic.ShowHiddenMessage;
 
 
