@@ -1,12 +1,11 @@
 package patientClinic;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+
+
 
 import com.kinduct.MavenFramework.Excel;
 
@@ -14,7 +13,7 @@ public class PateintDashboard {
 	
 	
 	
-	@Test (priority=2)
+	@Test (priority=1)
 	public void condition() throws Exception
 	{
 		Login login = new Login();
@@ -31,6 +30,10 @@ public class PateintDashboard {
 		
 		login.wait(".//*[@id='modal-video']");
 		
+		login.driver.findElement(By.xpath(".//*[@id='modal-video']")).click();
+		
+		Thread.sleep(2000);
+		login.driver.findElement(By.xpath(".//*[@id='modal-video']")).click();
 		boolean  flag = false;
 		
 		flag =login.driver.findElement(By.xpath(".//*[@id='modal-video']")).isDisplayed();
@@ -44,17 +47,18 @@ public class PateintDashboard {
 					
 				  Excel e = new Excel();
 					
-					e.excel(6,9,"PASS");
-					AssertJUnit.assertTrue(flag);
+					e.excelpatient(6,9,"PASS");
+					Assert.assertTrue(flag);
+					login.driver.close();
 					
 				}
 				else
 				{
 					Excel e = new Excel();
 					flag=false;
-					e.excel(6,9,"FAIL");
-					AssertJUnit.assertTrue(flag);
-					
+					e.excelpatient(6,9,"FAIL");
+					Assert.assertTrue(flag);
+					login.driver.close();
 				}
 			
 		login.driver.close();
@@ -62,32 +66,31 @@ public class PateintDashboard {
 	}
 
 	
-	@Test (priority=1)
+	@Test (priority=2)
 	public void procedure() throws Exception
 	{
 		Login login = new Login();
 		
 		login.login();
 		
-		login.wait(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[1]/h3");
+		login.wait(".//*[@id='profile_main']/article/div[2]/div[1]/div[1]/div/div[1]");
 		
-		System.out.println("test1");
-		// login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[1]/h3")).click();
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[1]/div/div[1]")).click();
 		 
-		 System.out.println("test2");
-		/* 
-		 WebElement element= login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[2]/a/img"));
 
-		 JavascriptExecutor executor = (JavascriptExecutor) login.driver;
-		 executor.executeScript("arguments[0].click();", element);
-		
-		 System.out.println("test4");*/
+		login.wait(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[1]");
+			
+		login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[1]")).click();
+			 
+		login.wait(".//.//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[2]/a/img");
+				
+		login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[2]/div/div[2]/a/img")).click();
 		 
-		login.driver.findElement(By.xpath(".//*[@id='profile_main']/article/div[2]/div[1]/div[3]/div/div[2]/div[1]/div/a/img")).click();
+				
+		boolean  flag = false;
 		
 		login.wait(".//*[@id='modal-video']");
-		
-		boolean  flag = false;
 		
 		flag =login.driver.findElement(By.xpath(".//*[@id='modal-video']")).isDisplayed();
 		
@@ -101,20 +104,24 @@ public class PateintDashboard {
 				  Excel e = new Excel();
 					
 					e.excel(9,10,"PASS");
-					AssertJUnit.assertTrue(flag);
+					Assert.assertTrue(flag);
+					login.driver.close();
 					
 				}
 				else
 				{
 					Excel e = new Excel();
 					flag=false;
-					e.excel(6,9,"FAIL");
-					AssertJUnit.assertTrue(flag);
+					e.excel(9,10,"FAIL");
+					Assert.assertTrue(flag);
+					login.driver.close();
 					
 				}
 			
 		login.driver.close();
 		
 	}
+	
+
 
 }

@@ -18,7 +18,7 @@ public class Excel {
 	public  void excelpatient(int start,int end,String status) throws Exception
 	{
 		
-		File clinic = new File("/Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx");
+		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
@@ -50,17 +50,17 @@ public class Excel {
 		
 		
 	}
-	public  void excel(int start,int end,String status) throws Exception
+	public  void exceladmin(int start,int end,String status) throws Exception
 	{
 		
-		File clinic = new File("/Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx");
+		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
 		
 		XSSFWorkbook wb =new XSSFWorkbook(file);
 		
-		XSSFSheet sheet = wb.getSheetAt(1);
+		XSSFSheet sheet = wb.getSheetAt(3);
 		
 		//String data0 = sheet.getRow(1).getCell(5).getStringCellValue();
 		
@@ -72,7 +72,42 @@ public class Excel {
 			
 		{
 			
-			sheet.getRow(i).createCell(5).setCellValue(status);
+			sheet.getRow(i).createCell(4).setCellValue(status);
+			
+		}
+		FileOutputStream fout = new FileOutputStream(clinic);
+		
+		
+		
+		wb.write(fout);
+		
+		//wb.close();
+		
+		
+	}
+	public  void excel(int start,int end,String status) throws Exception
+	{
+		
+		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
+		
+		FileInputStream file = new FileInputStream(clinic);
+			
+		
+		XSSFWorkbook wb =new XSSFWorkbook(file);
+		
+		XSSFSheet sheet = wb.getSheetAt(2);
+		
+		//String data0 = sheet.getRow(1).getCell(5).getStringCellValue();
+		
+		//System.out.println(data0);
+		
+		//int rowcount = sheet.getLastRowNum();
+		
+		for (int i=start;i<end;i++)
+			
+		{
+			
+			sheet.getRow(i).createCell(4).setCellValue(status);
 			
 		}
 		FileOutputStream fout = new FileOutputStream(clinic);

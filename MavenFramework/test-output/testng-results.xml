@@ -1,55 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13389" started-at="2016-04-22T14:55:07Z" finished-at="2016-04-22T14:55:20Z">
+  <suite name="Default suite" duration-ms="74722" started-at="2016-04-22T18:11:51Z" finished-at="2016-04-22T18:13:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13389" started-at="2016-04-22T14:55:07Z" finished-at="2016-04-22T14:55:20Z">
-      <class name="patientClinic.Login">
-        <test-method status="FAIL" signature="login()[pri:0, instance:patientClinic.Login@380fb434]" name="login" duration-ms="13362" started-at="2016-04-22T11:55:07Z" finished-at="2016-04-22T11:55:20Z">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[/Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: /Users/abhatnagar/Documents/workspace/MavenFramework/clinic2.xlsx (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at com.kinduct.MavenFramework.Excel.excelpatient(Excel.java:23)
-	at patientClinic.Login.login(Login.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+    <test name="Default test" duration-ms="74722" started-at="2016-04-22T18:11:51Z" finished-at="2016-04-22T18:13:06Z">
+      <class name="patientClinic.PatientAssessment">
+        <test-method status="PASS" signature="Assessment_view_icon()[pri:0, instance:patientClinic.PatientAssessment@506e6d5e]" name="Assessment_view_icon" duration-ms="22537" started-at="2016-04-22T15:11:51Z" finished-at="2016-04-22T15:12:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- patientClinic.Login -->
+        </test-method> <!-- Assessment_view_icon -->
+        <test-method status="PASS" signature="Assessment_view_email()[pri:0, instance:patientClinic.PatientAssessment@506e6d5e]" name="Assessment_view_email" duration-ms="17604" started-at="2016-04-22T15:12:14Z" finished-at="2016-04-22T15:12:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assessment_view_email -->
+        <test-method status="PASS" signature="Assessment_view_print()[pri:0, instance:patientClinic.PatientAssessment@506e6d5e]" name="Assessment_view_print" duration-ms="16175" started-at="2016-04-22T15:12:31Z" finished-at="2016-04-22T15:12:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assessment_view_print -->
+        <test-method status="PASS" signature="Assessment_view_back()[pri:0, instance:patientClinic.PatientAssessment@506e6d5e]" name="Assessment_view_back" duration-ms="18365" started-at="2016-04-22T15:12:48Z" finished-at="2016-04-22T15:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assessment_view_back -->
+      </class> <!-- patientClinic.PatientAssessment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
