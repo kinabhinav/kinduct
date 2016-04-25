@@ -1,0 +1,225 @@
+2016-04-23 16:50:54,312 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kinduct:MavenFramework:0.0.1-SNAPSHOT @ /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/pom.xml.
+2016-04-23 16:50:56,468 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:50:56,468 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 16:50:56,471 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:50:56,471 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 16:50:59,256 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:50:59,257 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 16:50:59,259 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:50:59,259 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 16:56:24,870 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:56:24,870 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 16:56:24,873 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 16:56:24,873 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 18:06:57,310 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 18:06:57,313 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 18:06:57,315 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 18:06:57,315 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 18:06:58,647 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 18:06:58,647 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 18:06:58,651 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 18:06:58,651 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 22:14:06,732 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:14:06,735 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 22:14:06,738 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:14:06,738 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 22:14:07,865 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:14:07,865 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 22:14:07,867 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:14:07,867 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 22:30:36,405 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:30:36,406 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 22:30:36,408 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:30:36,408 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 22:30:37,689 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:30:37,690 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 22:30:37,691 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 22:30:37,691 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:36:55,504 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:55,505 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:36:55,506 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:55,506 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:36:56,752 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:56,752 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:36:56,753 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:56,754 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:36:57,767 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:57,767 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:36:57,769 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:36:57,770 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:37:51,320 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:37:51,321 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:37:51,322 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:37:51,322 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:37:52,389 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:37:52,391 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:37:52,393 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:37:52,395 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:44:56,293 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:44:56,293 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:44:56,295 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:44:56,295 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:44:57,509 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:44:57,509 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:44:57,511 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:44:57,512 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:47:54,800 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:47:54,803 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:47:54,808 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:47:54,808 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:47:55,821 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:47:55,823 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:47:55,825 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:47:55,826 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:55:19,181 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:55:19,182 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:55:19,184 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:55:19,184 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:55:20,303 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:55:20,304 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:55:20,305 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:55:20,305 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:59:44,648 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:59:44,648 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:59:44,658 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:59:44,658 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-23 23:59:45,779 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:59:45,779 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-23 23:59:45,781 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-23 23:59:45,781 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:14:44,218 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:14:44,225 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:14:44,226 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:14:44,232 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:14:45,257 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:14:45,258 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:14:45,260 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:14:45,260 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:19:56,676 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:56,677 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:19:56,679 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:56,679 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:19:57,799 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:57,799 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:19:57,801 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:57,802 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:19:58,811 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:58,811 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:19:58,812 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:19:58,813 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:21:13,889 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:21:13,891 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:21:13,893 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:21:13,893 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:21:14,906 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:21:14,906 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:21:14,907 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:21:14,907 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:27:24,185 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:27:24,185 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:27:24,186 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:27:24,186 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 00:27:25,339 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:27:25,340 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 00:27:25,341 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 00:27:25,341 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 10:05:57,870 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 10:05:57,871 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 10:05:57,874 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 10:05:57,874 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-24 10:05:58,993 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 10:05:58,993 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-24 10:05:58,995 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-24 10:05:58,995 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 09:18:50,320 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 09:18:50,321 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 09:18:50,322 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 09:18:50,322 [Worker-198] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 09:18:51,655 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 09:18:51,655 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 09:18:51,656 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 09:18:51,657 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:09:12,142 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:09:12,144 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:09:12,145 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:09:12,145 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:09:13,303 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:09:13,307 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:09:13,308 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:09:13,309 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:15:02,821 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:15:02,827 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:15:02,830 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:15:02,830 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:15:03,953 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:15:03,953 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:15:03,955 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:15:03,955 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:31:19,312 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:31:19,314 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:31:19,316 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:31:19,316 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:31:20,442 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:31:20,442 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:31:20,444 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:31:20,444 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:35:05,975 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:05,977 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:35:05,979 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:05,980 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:35:07,103 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:07,103 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:35:07,108 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:07,109 [Worker-209] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:35:08,171 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:08,171 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:35:08,173 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:35:08,173 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:38:47,580 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:38:47,582 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:38:47,583 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:38:47,584 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:38:48,607 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:38:48,607 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:38:48,610 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:38:48,610 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:42:13,648 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:42:13,651 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:42:13,653 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:42:13,653 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:42:17,937 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:42:17,937 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:42:17,939 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:42:17,940 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:49:41,742 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:49:41,743 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:49:41,745 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:49:41,745 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:49:59,521 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:49:59,521 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:49:59,523 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:49:59,523 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:51:45,768 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:51:45,779 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:51:45,840 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:51:45,841 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 10:51:47,321 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:51:47,322 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 10:51:47,326 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 10:51:47,326 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 11:03:15,023 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 11:03:15,026 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 11:03:15,036 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 11:03:15,036 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 11:03:17,050 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 11:03:17,050 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 11:03:17,051 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 11:03:17,051 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 14:59:25,510 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 14:59:25,511 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 14:59:25,513 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 14:59:25,513 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources
+2016-04-25 14:59:26,539 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 14:59:26,539 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/main/resources
+2016-04-25 14:59:26,541 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-04-25 14:59:26,541 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/abhatnagar/Documents/workspace/GIT/MavenFramework/src/test/resources

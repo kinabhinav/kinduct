@@ -17,12 +17,9 @@ public class AdminLogin {
 	public void wait(  String text)
 		
 		{
-		
-		 
+				 
 				(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(text)));
 		
-				
-
 		}
 		
 		
@@ -31,7 +28,7 @@ public class AdminLogin {
 		{
 			// driver = new FirefoxDriver();
 			 
-			File src =  new File("//Users//abhatnagar//Downloads//phantomjs-2.1.1-macosx//bin//phantomjs.exe") ;
+			File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 			 
 			 System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
 			

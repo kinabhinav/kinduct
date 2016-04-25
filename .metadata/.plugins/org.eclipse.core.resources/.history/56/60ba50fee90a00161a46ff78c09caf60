@@ -1,0 +1,216 @@
+package patientClinic;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+public class PatientResources {
+	
+	@Test (priority=1)
+	public void Add_Resources () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//add resource
+		
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).click();
+		
+		
+		//title  		
+		
+		login.wait(".//*[@id='title']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='title']")).sendKeys("Automation Test");
+		
+		//browse
+		
+		login.wait(".//*[@id='document']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='document']")).sendKeys("/Users/abhatnagar/Desktop/test.png");
+		
+		//Save  
+		
+		login.wait(".//*[@id='modal-save']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
+		
+		
+		if (text.equalsIgnoreCase("Automation Test")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excelpatient(33,37,"PASS");
+				Assert.assertEquals(text, "Automation Test");
+				login.driver.close();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excelpatient(33,37,"FAIL");
+				Assert.assertEquals(text, "Automation Test");
+				login.driver.close();
+				
+			}
+		
+		
+	}
+	
+	@Test (priority=2)
+	public void Edit_Resources () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Edit resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]")).click();
+		
+
+		//title  		
+		
+		login.wait(".//*[@id='title']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='title']")).sendKeys("Automation Test");
+		
+		//browse
+		
+		login.wait(".//*[@id='document']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='document']")).sendKeys("/Users/abhatnagar/Desktop/test.png");
+		
+		//Save  
+		
+		login.wait(".//*[@id='modal-save']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
+		
+		
+		String upload = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[2]/a")).getText();
+		
+		if (text.equalsIgnoreCase("Automation Test") && upload.equalsIgnoreCase("test.png")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excelpatient(37,39,"PASS");
+				Assert.assertEquals(text, "Automation Test");
+				Assert.assertEquals(upload, "test.png");
+				
+				login.driver.close();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excelpatient(37,39,"FAIL");
+				Assert.assertEquals(text, "Automation Test");
+				Assert.assertEquals(upload, "test.png");
+				login.driver.close();
+				
+			}
+		
+	}
+	
+	@Test (priority=3)
+	public void Resources_Edit_Cancel_link () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Edit resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]")).click();
+		
+
+		//Cancel 		
+		
+		login.wait(".//*[@id='modal-close']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-close']")).click();
+		
+		//add resource
+		
+		
+		if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
+		{
+			  Excel e = new Excel();
+				
+				e.excelpatient(39,41,"PASS");
+				
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),"True");
+				
+				login.driver.close();
+			
+		}
+		else
+		{
+			Excel e = new Excel();
+			
+			e.excelpatient(39,41,"PASS");
+			
+			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),"True");
+			
+			login.driver.close();
+			
+		}
+		
+		
+		
+		
+	}
+	/*
+	@Test (priority=3)
+	public void Resources_Delete () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Delete resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]")).click();
+	}*/
+
+}
