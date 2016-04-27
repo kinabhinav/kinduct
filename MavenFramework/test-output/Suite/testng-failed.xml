@@ -3,22 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="patientClinic.PatientDashboard">
-        <methods>
-          <include name="procedure"/>
-          <include name="condition"/>
-        </methods>
-      </class> <!-- patientClinic.PatientDashboard -->
       <class name="patientClinic.PatientMessage">
         <methods>
           <include name="Post_Message"/>
         </methods>
       </class> <!-- patientClinic.PatientMessage -->
-      <class name="patientClinic.PatientResources">
-        <methods>
-          <include name="Add_Resources"/>
-        </methods>
-      </class> <!-- patientClinic.PatientResources -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

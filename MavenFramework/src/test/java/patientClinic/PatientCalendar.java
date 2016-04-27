@@ -1,5 +1,7 @@
 package patientClinic;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -86,7 +88,7 @@ public class PatientCalendar {
 				
 				e.excelpatient(67,72,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -96,7 +98,7 @@ public class PatientCalendar {
 				
 				e.excelpatient(67,72,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -143,7 +145,7 @@ public class PatientCalendar {
 						
 						e.excelpatient(72,74,"PASSED");
 						//Assert.assertEquals(text, "Automation Testing Note");
-						Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+						AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 						login.driver.close();
 						
 					}
@@ -153,7 +155,7 @@ public class PatientCalendar {
 						
 						e.excelpatient(72,74,"FAILED");
 						//Assert.assertEquals(text, "Automation Testing Note");
-						Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+						AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 						login.driver.close();
 						
 					}
@@ -190,7 +192,7 @@ public class PatientCalendar {
 				
 				e.excelpatient(74,75,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -200,7 +202,7 @@ public class PatientCalendar {
 				
 				e.excelpatient(74,75,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}

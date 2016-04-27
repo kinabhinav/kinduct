@@ -1,6 +1,7 @@
 package patientClinic;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import java.io.File;
 
@@ -33,7 +34,7 @@ public void wait(  String text)
 	{
 	
 	 
-			(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(text)));
+			(new WebDriverWait(driver,15)).until(ExpectedConditions.elementToBeClickable(By.xpath(text)));
 	
 
 	}

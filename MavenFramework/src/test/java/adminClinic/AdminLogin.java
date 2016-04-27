@@ -6,7 +6,8 @@ import java.io.File;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -26,13 +27,13 @@ public class AdminLogin {
 		@Test
 		public  void adminlogin() throws Exception
 		{
-			// driver = new FirefoxDriver();
+			 driver = new FirefoxDriver();
 			 
-			File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+			//File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 			 
-			 System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+			 //System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
 			
-			driver = new PhantomJSDriver();
+			//driver = new PhantomJSDriver();
 			
 			driver.get("https://qa3.kinductdev.com/login");
 			

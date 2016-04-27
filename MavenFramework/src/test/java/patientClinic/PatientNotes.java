@@ -1,5 +1,7 @@
 package patientClinic;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.FileNotFoundException;
 
 import org.openqa.selenium.By;
@@ -60,7 +62,7 @@ public class PatientNotes {
 				
 				e.excelpatient(45,49,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -70,7 +72,7 @@ public class PatientNotes {
 				
 				e.excelpatient(45,49,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -112,7 +114,7 @@ public class PatientNotes {
 				
 				e.excelpatient(49,51,"PASSED");
 				
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				
 				login.driver.close();
 			
@@ -123,7 +125,7 @@ public class PatientNotes {
 			
 			e.excelpatient(49,51,"FAILED");
 			
-			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+			AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 			
 			login.driver.close();
 			
@@ -182,7 +184,7 @@ public class PatientNotes {
 				
 				//Assert.assertEquals(note1, "Automation Testing Note EDIT");
 				
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -192,7 +194,7 @@ public class PatientNotes {
 				
 				e.excelpatient(51,53,"FAILED");
 				//Assert.assertEquals(note1, "Automation Testing Note EDIT");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -231,7 +233,7 @@ public class PatientNotes {
 				
 				e.excelpatient(53,55,"PASSED");
 				
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				
 				login.driver.close();
 			
@@ -242,7 +244,7 @@ public class PatientNotes {
 			
 			e.excelpatient(53,55,"FAILED");
 			
-			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+			AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 			
 			login.driver.close();
 			
@@ -297,7 +299,7 @@ public class PatientNotes {
 				
 				e.excelpatient(55,56,"PASSED");
 				
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 				
 				login.driver.close();
 			
@@ -308,7 +310,7 @@ public class PatientNotes {
 			
 			e.excelpatient(55,56,"FAILED");
 			
-			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
+			AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_notes']/div[1]/a")).isDisplayed(),true);
 			
 			login.driver.close();
 			

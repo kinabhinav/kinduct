@@ -1,5 +1,7 @@
 package patientClinic;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +14,8 @@ public class PatientMessage {
 	
 	@Test (priority=1)
 	public void Post_Message () throws Exception
+	
+	//public static void main (String[] args)throws Exception
 	
 	
 	{

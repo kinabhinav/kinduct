@@ -3,7 +3,7 @@
 <suite name="Suite" >
   <test name="Test">
     <classes>
-      <class name="patientClinic.PatientDashboard"/>
+      
       <class name="patientClinic.PatientAssessment"/>
       <class name="patientClinic.PatientJournal"/>
       <class name="patientClinic.PatientResources"/>

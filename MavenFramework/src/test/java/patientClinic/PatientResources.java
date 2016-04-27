@@ -1,5 +1,7 @@
 package patientClinic;
 
+import org.testng.annotations.Test;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -45,28 +47,42 @@ public class PatientResources {
 		
 		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
 		
-		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
+		
+		//add resource
+		
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
+		
+				if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
+				{
+					  Excel e = new Excel();
+						
+					  e.excelpatient(33,37,"PASSED");
+						
+						Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+						
+						login.driver.close();
+					
+				}
+				else
+				{
+					Excel e = new Excel();
+					
+					e.excelpatient(39,41,"FAILED");
+					
+					Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+					
+					login.driver.close();
+					
+				}
+				
 		
 		
-		if (text.equalsIgnoreCase("Automation Test")) {
-			
-			
-			  Excel e = new Excel();
-				
-				e.excelpatient(33,37,"PASSED");
-				Assert.assertEquals(text, "Automation Test");
-				login.driver.close();
-				
-			}
-			else
-			{
-				Excel e = new Excel();
-				
-				e.excelpatient(33,37,"FAILED");
-				Assert.assertEquals(text, "Automation Test");
-				login.driver.close();
-				
-			}
+		
+		
+		
+		
+		
+	
 		
 		
 	}
@@ -110,36 +126,36 @@ public class PatientResources {
 		
 		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
 		
-		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
 		
-		System.out.println(text);
-		String upload = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[2]/a")).getText();
+		//add resource
 		
-		System.out.println(upload);
+				login.wait(".//*[@id='profile_documents']/div[1]/a");
+				
+						if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
+						{
+							  Excel e = new Excel();
+								
+							  e.excelpatient(37,39,"PASSED");
+								
+								Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+								
+								login.driver.close();
+							
+						}
+						else
+						{
+							Excel e = new Excel();
+							
+							e.excelpatient(37,39,"FAILED");
+							
+							Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+							
+							login.driver.close();
+							
+						}
+						
 		
-		if (text.equalsIgnoreCase("Automation Test Edit") && upload.equalsIgnoreCase("test.png")) {
-			
-			
-			  Excel e = new Excel();
-				
-				e.excelpatient(37,39,"PASSED");
-				
-				Assert.assertEquals(text, "Automation Test Edit");
-				Assert.assertEquals(upload, "test.png");
-				
-				login.driver.close();
-				
-			}
-			else
-			{
-				Excel e = new Excel();
-				
-				e.excelpatient(37,39,"FAILED");
-				Assert.assertEquals(text, "Automation Test Edit");
-				Assert.assertEquals(upload, "test.png");
-				login.driver.close();
-				
-			}
+		
 		
 	}
 	

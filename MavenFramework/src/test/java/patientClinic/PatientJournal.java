@@ -1,5 +1,7 @@
 package patientClinic;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -43,7 +45,7 @@ public class PatientJournal {
 			  Excel e = new Excel();
 				
 				e.excelpatient(26,30,"PASS");
-				sa.assertEquals(text, "new journal entry");
+				AssertJUnit.assertEquals(text, "new journal entry");
 				login.driver.close();
 				
 			}
@@ -52,7 +54,7 @@ public class PatientJournal {
 				Excel e = new Excel();
 				
 				e.excelpatient(26,30,"FAIL");
-				sa.assertEquals(text, "new journal entry");
+				AssertJUnit.assertEquals(text, "new journal entry");
 				login.driver.close();
 				
 			}
@@ -127,7 +129,7 @@ public class PatientJournal {
 				
 				e.excelpatient(30,31,"PASS");
 				//sa1.assertEquals(text1, "Journal entry has been saved");
-				Assert.assertEquals(text1,"Journal entry has been saved");
+				AssertJUnit.assertEquals(text1,"Journal entry has been saved");
 				login.driver.close();
 				
 			}
@@ -137,7 +139,7 @@ public class PatientJournal {
 				
 				e.excelpatient(30,31,"FAIL");
 				//sa1.assertEquals(text1, "Journal entry has been saved");
-				Assert.assertEquals(text1,"Journal entry has been saved");
+				AssertJUnit.assertEquals(text1,"Journal entry has been saved");
 				login.driver.close();
 				
 			}
