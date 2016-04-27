@@ -1,0 +1,306 @@
+package patientClinic;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+public class PatientResources {
+	
+	@Test (priority=1)
+	public void Add_Resources () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//add resource
+		
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).click();
+		
+		
+		//title  		
+		
+		login.wait(".//*[@id='title']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='title']")).sendKeys("Automation Test");
+		
+		//browse
+		
+		login.wait(".//*[@id='document']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='document']")).sendKeys("/Users/abhatnagar/Desktop/test.png");
+		
+		//Save  
+		
+		login.wait(".//*[@id='modal-save']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
+		
+		
+		if (text.equalsIgnoreCase("Automation Test")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excelpatient(33,37,"PASSED");
+				Assert.assertEquals(text, "Automation Test");
+				login.driver.close();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excelpatient(33,37,"FAILED");
+				Assert.assertEquals(text, "Automation Test");
+				login.driver.close();
+				
+			}
+		
+		
+	}
+	
+	@Test (priority=2)
+	public void Edit_Resources () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Edit resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]")).click();
+		
+
+		//title  		
+		
+		login.wait(".//*[@id='title']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='title']")).clear();
+		
+		login.driver.findElement(By.xpath(".//*[@id='title']")).sendKeys("Automation Test Edit");
+		
+		//browse
+		
+		login.wait(".//*[@id='document']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='document']")).sendKeys("/Users/abhatnagar/Desktop/test.png");
+		
+		//Save  
+		
+		login.wait(".//*[@id='modal-save']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[1]")).getText();
+		
+		System.out.println(text);
+		String upload = login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[2]/a")).getText();
+		
+		System.out.println(upload);
+		
+		if (text.equalsIgnoreCase("Automation Test Edit") && upload.equalsIgnoreCase("test.png")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excelpatient(37,39,"PASSED");
+				
+				Assert.assertEquals(text, "Automation Test Edit");
+				Assert.assertEquals(upload, "test.png");
+				
+				login.driver.close();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excelpatient(37,39,"FAILED");
+				Assert.assertEquals(text, "Automation Test Edit");
+				Assert.assertEquals(upload, "test.png");
+				login.driver.close();
+				
+			}
+		
+	}
+	
+	@Test (priority=3)
+	public void Resources_Edit_Cancel_link () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Edit resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[1]/span[1]")).click();
+		
+
+		//Cancel 		
+		
+		login.wait(".//*[@id='modal-close']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-close']")).click();
+		
+		//add resource
+		
+		
+		if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
+		{
+			  Excel e = new Excel();
+				
+				e.excelpatient(39,41,"PASSED");
+				
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+				
+				login.driver.close();
+			
+		}
+		else
+		{
+			Excel e = new Excel();
+			
+			e.excelpatient(39,41,"FAILED");
+			
+			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+			
+			login.driver.close();
+			
+		}
+		
+		
+		
+		
+	}
+	
+	@Test (priority=4)
+	public void Resources_Delete () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Delete resource
+		
+		login.wait(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[2]/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[5]/a[2]/span[1]")).click();
+		
+		//Yes 
+		
+		login.wait(".//*[@id='modal-save']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
+		
+		if (login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[2]/a")).isDisplayed())
+			
+		{
+			Excel e = new Excel();
+			
+			e.excelpatient(41,42,"PASSED");
+			
+			Assert.assertFalse(false);
+			
+			login.driver.close();
+			
+			
+		}
+		else
+		{
+			Excel e = new Excel();
+			
+			e.excelpatient(41,42,"FAILED");
+			
+			Assert.assertFalse(false);
+			
+			login.driver.close();
+			
+			
+		}
+		
+		
+	}
+	@Test (priority=5)
+	public void Resources_Add_Cancel_link () throws Exception
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Resources
+		login.wait(".//*[@id='profile_tabs']/li[4]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[4]/a")).click();
+		
+		//Add resource
+		
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).click();
+		
+
+		//Cancel 		
+		
+		login.wait(".//*[@id='modal-close']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='modal-close']")).click();
+		
+		//add resource
+		
+		
+		if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
+		{
+			  Excel e = new Excel();
+				
+				e.excelpatient(42,44,"PASSED");
+				
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+				
+				login.driver.close();
+			
+		}
+		else
+		{
+			Excel e = new Excel();
+			
+			e.excelpatient(42,44,"FAILED");
+			
+			Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed(),true);
+			
+			login.driver.close();
+			
+		}
+	}
+
+}

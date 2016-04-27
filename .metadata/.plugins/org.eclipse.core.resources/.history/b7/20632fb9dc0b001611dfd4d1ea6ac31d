@@ -1,0 +1,75 @@
+package patientClinic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+public class PatientMessage {
+	
+	@Test (priority=1)
+	public void Post_Message () throws Exception
+	
+	
+	{
+		Login login = new Login();
+		
+		login.login();
+		
+		//Messages
+		login.wait(".//*[@id='profile_tabs']/li[6]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='profile_tabs']/li[6]/a")).click();
+		
+		//post message
+		
+		login.wait(".//*[@id='content']/article/header/div/a[2]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).click();
+		
+		//Select a recipient  
+		
+		login.wait(".//*[@id='select_link']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='select_link']")).click();
+		
+		// Demo Practitioner recipient  
+		
+		login.wait(".//*[@id='user_giu006k4vhs1eze6']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user_giu006k4vhs1eze6']")).click();
+	
+		// Select button 
+		
+		login.wait(".//*[@id='multi_select_user']/div[2]/div/div[3]/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='multi_select_user']/div[2]/div/div[3]/button")).click();
+		
+		// Subject
+		
+		login.wait(".//*[@id='subject']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='subject']")).sendKeys("Post a Message Subject Test");
+		
+				
+		//Message
+		
+		login.driver.switchTo().frame(login.driver.findElement(By.cssSelector("iframe[title='Rich text editor, body_html']")));
+		
+		(new WebDriverWait(login.driver,10)).until(ExpectedConditions.elementToBeClickable(By.className("cke_show_borders")));
+		
+		
+				
+		login.driver.findElement(By.className("cke_show_borders")).sendKeys("Response to TEST MESSAGE ");
+		
+		// Send button 
+		
+		login.wait(".//*[@id='submit_button']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		
+	
+	
+	}
+
+}

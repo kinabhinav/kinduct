@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="patientClinic.PatientResources">
+      <class name="patientClinic.PatientCalendar">
         <methods>
-          <include name="Edit_Resources"/>
-          <include name="Add_Resources"/>
-          <include name="Resources_Edit_Cancel_link"/>
+          <include name="Calendar_Add_Event_Cancel"/>
+          <include name="Calendar_Add_Event"/>
+          <include name="Calendar_Export"/>
         </methods>
-      </class> <!-- patientClinic.PatientResources -->
+      </class> <!-- patientClinic.PatientCalendar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -42,21 +42,22 @@ public void wait(  String text)
 	@Test
 	public  void login() throws Exception
 	{
-		 //driver = new FirefoxDriver();
-		File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+		 driver = new FirefoxDriver();
+		//File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 		 
-		 System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+		//System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
 		
-		driver = new PhantomJSDriver();
+		//driver = new PhantomJSDriver();
 		
 		
-		driver.get("https://qa3.kinductdev.com/login");
+		driver.get("https://qa3.kinductdev.com/login/site/core");
 		
 		driver.manage().window().maximize();
 		
+		driver.findElement(By.xpath(".//*[@id='username']")).clear();
 		driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");
 		
-		
+		driver.findElement(By.xpath(".//*[@id='password']")).clear();
 		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("L3@d3r!");
 		
 		wait(".//*[@id='login_form']/div[3]/div/button");

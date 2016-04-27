@@ -228,7 +228,7 @@ public class PatientResources {
 		{
 			Excel e = new Excel();
 			
-			e.excelpatient(41,42,"PASSED");
+			e.excelpatient(41,42,"FAILED");
 			
 			Assert.assertFalse(false);
 			
@@ -240,7 +240,7 @@ public class PatientResources {
 		{
 			Excel e = new Excel();
 			
-			e.excelpatient(41,42,"FAILED");
+			e.excelpatient(41,42,"PASSED");
 			
 			Assert.assertFalse(false);
 			
