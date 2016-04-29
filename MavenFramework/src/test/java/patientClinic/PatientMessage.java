@@ -78,9 +78,9 @@ public class PatientMessage {
 		
 		//
 		
-		login.wait(".//*[@id='content']/article/header/div/a[2]");
+		login.wait(".//*[@id='content']/article/div[1]/a");
 		
-		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed())
+		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed())
 		{
 			
 			
@@ -88,7 +88,7 @@ public class PatientMessage {
 				
 				e.excelpatient(57,61,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -98,7 +98,7 @@ public class PatientMessage {
 				
 				e.excelpatient(57,61,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed(),true);
 				login.driver.close();
 				
 			}

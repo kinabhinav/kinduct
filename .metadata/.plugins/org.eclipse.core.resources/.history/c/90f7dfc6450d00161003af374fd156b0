@@ -1,0 +1,49 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class AddPatient {
+	
+	@Test
+	public void searchPatient() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Add Patient
+		
+		login.wait(".//*[@id='content']/section/div[2]/div[1]/div[1]/div/div[1]/div/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='content']/section/div[2]/div[1]/div[1]/div/div[1]/div/a")).click();
+		
+		//First Name  
+		
+		login.wait(".//*[@id='first_name']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='first_name']")).sendKeys("Mark");
+		
+		//Last Name  
+		
+		login.wait(".//*[@id='last_name']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='last_name']")).sendKeys("Taylor");
+		
+		//email
+		
+		login.wait(".//*[@id='email']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("info@kinduct.com");
+		
+		//Submit  
+		
+		login.wait(".//*[@id='submit_button']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		
+	}
+
+}

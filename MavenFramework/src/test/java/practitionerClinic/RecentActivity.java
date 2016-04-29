@@ -1,0 +1,104 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+public class RecentActivity {
+	
+	@Test(priority=1)
+	public void recentActivity() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Message
+		
+		login.wait(".//*[@id='content']/section/div[2]/div[2]/div/div/div[2]/div[1]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='content']/section/div[2]/div[2]/div/div/div[2]/div[1]/a")).click();
+		
+		
+		//Kinduct Clinic - Message
+		
+		String title = login.driver.getTitle();
+		
+		if (title.equalsIgnoreCase("Kinduct Clinic - Message")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(21,23,"PASS");
+				
+				Assert.assertEquals(title,"Kinduct Clinic - Message");
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(21,23,"FAIL");
+				
+				Assert.assertEquals(title,"Kinduct Clinic - Message");
+				
+				login.driver.quit();
+				
+			}
+		
+	}
+	
+	@Test(priority=1)
+	public void recentActivity_ViewAll() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Message View All
+		
+		login.wait(".//*[@id='content']/section/div[2]/div[2]/div/div/div[1]/div/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='content']/section/div[2]/div[2]/div/div/div[1]/div/a")).click();
+		
+		
+		//Kinduct Clinic - Message
+		
+		String title = login.driver.getTitle();
+		
+		if (title.equalsIgnoreCase("Kinduct Clinic - Message")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(24,26,"PASS");
+				
+				Assert.assertEquals(title,"Kinduct Clinic - Message");
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(24,26,"FAIL");
+				
+				Assert.assertEquals(title,"Kinduct Clinic - Message");
+				
+				login.driver.quit();
+				
+			}
+		
+	}
+
+
+}

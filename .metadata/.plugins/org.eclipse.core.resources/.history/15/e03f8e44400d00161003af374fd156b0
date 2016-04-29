@@ -1,0 +1,69 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+import junit.framework.Assert;
+
+
+
+public class SearchPatient {
+	
+	
+	@Test
+	public void searchPatient() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Search
+		
+		login.wait(".//*[@id='user-search-term']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-search-term']")).sendKeys("demo");
+		
+		//Search icon 
+		
+		login.wait(".//*[@id='user-list-search']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-list-search']")).click();
+		
+		//
+		
+		login.wait(".//*[@id='user-list_paginate']/ul/li[2]/a");
+		
+		Boolean test = login.driver.findElement(By.xpath(".//*[@id='user-list_info']")).isDisplayed();
+		
+		if (test.equals("true")) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(6,8,"PASS");
+				
+				Assert.assertEquals(test,"true");
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(6,8,"FAIL");
+				
+				Assert.assertEquals(test,"true");
+				
+				login.driver.quit();
+				
+			}
+		
+		
+	}
+
+}

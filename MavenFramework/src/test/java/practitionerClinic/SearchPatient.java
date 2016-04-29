@@ -1,0 +1,132 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+
+
+
+
+public class SearchPatient {
+	
+	
+	@Test(priority=1 )
+	public void searchPatient() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Search
+		
+		login.wait(".//*[@id='user-search-term']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-search-term']")).sendKeys("demo");
+		
+		//Search icon 
+		
+		login.wait(".//*[@id='user-list-search']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-list-search']")).click();
+		
+		//
+		
+		login.wait(".//*[@id='user-list_paginate']/ul/li[2]/a");
+		
+		Boolean test = login.driver.findElement(By.xpath(".//*[@id='user-list_info']")).isDisplayed();
+		
+		if (test.equals(true)) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(6,8,"PASS");
+				
+				Assert.assertTrue(true);
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(6,8,"FAIL");
+				
+				Assert.assertTrue(true);
+				
+				login.driver.quit();
+				
+			}
+		
+		
+	}
+	
+	@Test(priority=2 )
+	public void searchClear() throws Exception
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Search
+		
+		login.wait(".//*[@id='user-search-term']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-search-term']")).sendKeys("demo");
+		
+		//Search icon 
+		
+		login.wait(".//*[@id='user-list-search']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-list-search']")).click();
+		
+		//reset icon 
+		
+		login.wait(".//*[@id='user-search-clear']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='user-search-clear']")).click();
+		
+		//verification text   
+		
+		login.wait(".//*[@id='user-list']/tbody/tr/td");
+		
+		Boolean test = login.driver.findElement(By.xpath(".//*[@id='user-list']/tbody/tr/td")).isDisplayed();
+		
+		//System.out.println(b);
+		
+		if (test.equals(true)) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(9,12,"PASS");
+				
+				Assert.assertTrue(true);
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(9,12,"FAIL");
+				
+				Assert.assertTrue(true);
+				
+				login.driver.quit();
+				
+			}
+		
+		
+	}
+
+}

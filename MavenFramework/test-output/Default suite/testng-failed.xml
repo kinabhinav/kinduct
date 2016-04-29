@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="patientClinic.PatientMessage">
+      <class name="practitionerClinic.Protocol">
         <methods>
-          <include name="Post_Message_Cancel_link"/>
-          <include name="Post_Message"/>
-          <include name="Message_Delete"/>
-          <include name="Message_Show"/>
-          <include name="Message_Hide"/>
+          <include name="Protocol"/>
         </methods>
-      </class> <!-- patientClinic.PatientMessage -->
+      </class> <!-- practitionerClinic.Protocol -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -186,7 +186,7 @@ public class PatientResources {
 		
 		//add resource
 		
-		
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
 		if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
 		{
 			  Excel e = new Excel();
@@ -239,14 +239,16 @@ public class PatientResources {
 		
 		login.driver.findElement(By.xpath(".//*[@id='modal-save']")).click();
 		
-		if (login.driver.findElement(By.xpath(".//*[@id='documents_table']/tbody/tr[1]/td[2]/a")).isDisplayed())
+		login.wait(".//*[@id='profile_documents']/div[1]/a");
+		
+		if (login.driver.findElement(By.xpath(".//*[@id='profile_documents']/div[1]/a")).isDisplayed())
 			
 		{
 			Excel e = new Excel();
 			
 			e.excelpatient(41,42,"FAILED");
 			
-			Assert.assertFalse(false);
+			Assert.assertTrue(true);
 			
 			login.driver.close();
 			
@@ -258,7 +260,7 @@ public class PatientResources {
 			
 			e.excelpatient(41,42,"PASSED");
 			
-			Assert.assertFalse(false);
+			Assert.assertTrue(true);
 			
 			login.driver.close();
 			

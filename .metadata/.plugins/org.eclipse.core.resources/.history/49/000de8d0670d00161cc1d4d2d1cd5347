@@ -1,0 +1,47 @@
+package practitionerClinic;
+
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class Protocol {
+	
+	@Test
+	
+	public void Protocol() throws Exception
+	
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		List<WebElement> tableColCollection = login.driver.findElements(By.id("generic_table"));
+				List<String> elements = new LinkedList<String>();
+				for (WebElement e : tableColCollection) {
+				    elements.add(e.getText());
+				    
+				    System.out.println(e);
+				}
+		
+	}
+
+}

@@ -1,0 +1,91 @@
+package practitionerClinic;
+
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.kinduct.MavenFramework.Excel;
+
+public class Protocol {
+	
+	@Test
+	
+	public void Protocol() throws Exception
+	
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		//Protocol
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+		
+		String before = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+			
+		System.out.println(before);
+			
+		//filer  	
+		
+		login.wait(".//*[@id='generic_table']/thead/tr/th[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='generic_table']/thead/tr/th[1]")).click();
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+		
+		String after = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+		
+		System.out.println(after);
+		
+		if(after.equalsIgnoreCase(before))
+		
+		{
+			 Excel e = new Excel();
+				
+				e.excel(27,30,"FAILED");
+				
+				Assert.assertFalse(false);
+				
+				login.driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(27,30,"PASSED");
+				
+				Assert.assertFalse(false);
+				
+				login.driver.quit();
+				
+			
+			
+		}
+		login.driver.quit();
+		
+		
+	}
+
+}
