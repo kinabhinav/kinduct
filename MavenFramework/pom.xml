@@ -19,11 +19,7 @@
   
   <dependencies>
   
-<dependency>
-	<groupId>com.github.detro.ghostdriver</groupId>
-	<artifactId>phantomjsdriver</artifactId>
-	<version>1.0.1</version>
-</dependency>
+
   
   
   

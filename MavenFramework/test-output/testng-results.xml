@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16568" started-at="2016-05-01T17:03:05Z" finished-at="2016-05-01T17:03:21Z">
+  <suite name="Default suite" duration-ms="20904" started-at="2016-05-01T20:32:40Z" finished-at="2016-05-01T20:33:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16568" started-at="2016-05-01T17:03:05Z" finished-at="2016-05-01T17:03:21Z">
-      <class name="patientClinic.Login">
-        <test-method status="PASS" signature="login()[pri:0, instance:patientClinic.Login@13fee20c]" name="login" duration-ms="16552" started-at="2016-05-01T14:03:05Z" finished-at="2016-05-01T14:03:21Z">
+    <test name="Default test" duration-ms="20904" started-at="2016-05-01T20:32:40Z" finished-at="2016-05-01T20:33:01Z">
+      <class name="practitionerClinic.BuildProtocol">
+        <test-method status="PASS" signature="protocol()[pri:0, instance:practitionerClinic.BuildProtocol@2812cbfa]" name="protocol" duration-ms="20880" started-at="2016-05-01T17:32:40Z" finished-at="2016-05-01T17:33:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- patientClinic.Login -->
+        </test-method> <!-- protocol -->
+      </class> <!-- practitionerClinic.BuildProtocol -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
