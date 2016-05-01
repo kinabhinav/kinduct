@@ -2,10 +2,9 @@ package practitionerClinic;
 
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.kinduct.MavenFramework.Excel;
+import com.kinduct.MavenFramework.SortTextPrac;
 
 public class Protocol {
 	
@@ -33,58 +32,301 @@ public class Protocol {
 		
 		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
 		
-		//filer  	
+		String xpathfilter =".//*[@id='generic_table']/thead/tr/th[1]";
 		
-		login.wait(".//*[@id='generic_table']/thead/tr/th[1]");
+		String xpathtext = ".//*[@id='generic_table']/tbody/tr[1]/td[1]/a";
+		
+		SortTextPrac filter = new SortTextPrac();
+		
+		filter.sorttext(login.driver,xpathfilter,xpathtext,27,30);
 				
-		login.driver.findElement(By.xpath(".//*[@id='generic_table']/thead/tr/th[1]")).click();
-		
-		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
-		
-		String before = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
-			
-		System.out.println(before);
-			
-		//filer  	
-		
-		login.wait(".//*[@id='generic_table']/thead/tr/th[1]");
-		
-		login.driver.findElement(By.xpath(".//*[@id='generic_table']/thead/tr/th[1]")).click();
-		
-		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
-		
-		String after = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
-		
-		System.out.println(after);
-		
-		if(after.equalsIgnoreCase(before))
-		
-		{
-			 Excel e = new Excel();
-				
-				e.excel(27,30,"FAILED");
-				
-				Assert.assertFalse(false);
-				
-				login.driver.quit();
-				
-			}
-			else
-			{
-				Excel e = new Excel();
-				
-				e.excel(27,30,"PASSED");
-				
-				Assert.assertFalse(false);
-				
-				login.driver.quit();
-				
-			
-			
-		}
-		
-		
-		
 	}
+	
+@Test(priority=2)
+	
+	public void protocol_sort_BodyPart() throws Exception
+	
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		String xpathsort =".//*[@id='generic_table']/thead/tr/th[3]";
+		
+		String xpathtext = ".//*[@id='generic_table']/tbody/tr[1]/td[3]";
+		
+		SortTextPrac filter = new SortTextPrac();
+		
+		filter.sorttext(login.driver,xpathsort,xpathtext,30,31);
+				
+	}
+@Test(priority=3)
+
+public void protocol_sort_Tags() throws Exception
+
+{
+	
+	
+	PracLogin login = new PracLogin();
+	
+	login.login();
+	
+	//Rehab 
+			
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+	
+	
+	//Protocols
+	
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+	
+	String xpathsort =".//*[@id='generic_table']/thead/tr/th[4]";
+	
+	String xpathtext = ".//*[@id='generic_table']/tbody/tr[1]/td[4]";
+	
+	SortTextPrac filter = new SortTextPrac();
+	
+	filter.sorttext(login.driver,xpathsort,xpathtext,31,32);
+			
+}
+@Test(priority=4)
+
+public void protocol_sort_Created () throws Exception
+
+{
+	
+	
+	PracLogin login = new PracLogin();
+	
+	login.login();
+	
+	//Rehab 
+			
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+	
+	
+	//Protocols
+	
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+	
+	String xpathsort =".//*[@id='generic_table']/thead/tr/th[5]";
+	
+	String xpathtext = ".//*[@id='generic_table']/tbody/tr[1]/td[5]";
+	
+	SortTextPrac filter = new SortTextPrac();
+	
+	filter.sorttext(login.driver,xpathsort,xpathtext,32,33);
+			
+}
+
+@Test(priority=5)
+
+public void protocol_sort_Status () throws Exception
+
+{
+	
+	
+	PracLogin login = new PracLogin();
+	
+	login.login();
+	
+	//Rehab 
+			
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+	
+	
+	//Protocols
+	
+	login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+	
+	login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+	
+	String xpathsort =".//*[@id='generic_table']/thead/tr/th[6]";
+	
+	String xpathtext = ".//*[@id='generic_table']/tbody/tr[1]/td[6]";
+	
+	SortTextPrac filter = new SortTextPrac();
+	
+	filter.sorttext(login.driver,xpathsort,xpathtext,33,34);
+			
+}
+	@Test(priority=6)
+	
+	public void protocol_copy () throws Exception
+	
+	{
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		//Copy
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[2]/td[7]/a[1]/span");
+		
+		login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[2]/td[7]/a[1]/span")).click();
+		
+		//Workout name
+		
+		login.wait(".//*[@id='workout_name']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='workout_name']")).sendKeys("Brendon M");
+		
+		//Save
+		
+		login.wait(".//*[@id='submit_button']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		
+		//title
+		
+		//String protocol = login.driver.getTitle();
+		
+		Status s = new Status();
+		
+		s.statusTitle(34, 36, login.driver,"Kinduct Clinic - Protocols");
+				
+		}
+
+	@Test(priority=7)
+
+	public void protocol_hide () throws Exception
+
+	{
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		// Protocol name
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+		
+		//Hide
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[7]/a[2]/span");
+		
+		login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[7]/a[2]/span")).click();
+		
+		// Protocol name
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+				
+		String texthide = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+		
+		
+		boolean test = !text.equalsIgnoreCase(texthide);
+		
+		System.out.println(test);
+		Status s = new Status();
+		
+		s.statusBooleanTrue(36, 37, login.driver,test);
+				
+		}
+	
+	@Test(priority=8)
+
+	public void protocol_delete () throws Exception
+
+	{
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		// Protocol name
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+		
+		String text = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+		
+		//Hide
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[7]/a[2]/span");
+		
+		login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[7]/a[2]/span")).click();
+		
+		// Protocol name
+		
+		login.wait(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a");
+				
+		String texthide = login.driver.findElement(By.xpath(".//*[@id='generic_table']/tbody/tr[1]/td[1]/a")).getText();
+		
+		
+		boolean test = !text.equalsIgnoreCase(texthide);
+		
+		System.out.println(test);
+		Status s = new Status();
+		
+		s.statusBooleanTrue(37, 38, login.driver,test);
+				
+		}
+
 
 }

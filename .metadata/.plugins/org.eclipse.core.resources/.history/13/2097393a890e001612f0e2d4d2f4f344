@@ -1,0 +1,149 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class BuildProtocol {
+	
+@Test(priority=1)
+	
+	public void protocol() throws Exception
+	
+	{
+		
+		
+		PracLogin login = new PracLogin();
+		
+		login.login();
+		
+		//Rehab 
+				
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		//Build Protocol
+		
+		login.wait(".//*[@id='content']/div[1]/a");
+		
+		login.driver.findElement(By.xpath(".//*[@id='content']/div[1]/a")).click();
+		
+		//Workout name
+		
+		login.wait(".//*[@id='workout_name']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='workout_name']")).sendKeys("Protocol Test");
+		
+		//
+		
+		//Body Part focus
+		
+		login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button")).click();
+		
+		//Ankle
+		
+		login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/ul/li[3]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/ul/li[3]/a/label/input")).click();
+		
+		//Body Part focus
+		
+		login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button")).click();
+		
+		//Library
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/button")).click();
+		
+		//Cardio
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/button")).click();
+		
+		//Library
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/button")).click();
+		
+		//Body part
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/button")).click();
+		
+		//Legs
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/ul/li[7]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/ul/li[7]/a/label/input")).click();
+		
+		//Body part
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/button")).click();
+		
+		//Equipment
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/button")).click();
+		
+		//Balance disk
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/ul/li[2]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/ul/li[2]/a/label/input")).click();
+		
+		//Equipment
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/button")).click();
+		
+		//Type
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/button")).click();
+		
+		//Foot Hop
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/ul/li[2]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/ul/li[2]/a/label/input")).click();
+		
+		//Type
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/button")).click();
+		
+		//Add Exercise
+		
+		login.wait(".//*[@id='img_disc_180_degree_hops|392']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='img_disc_180_degree_hops|392']")).click();
+		
+		//Submit
+		
+		login.wait(".//*[@id='submit_button']");
+		
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+	}	
+
+}

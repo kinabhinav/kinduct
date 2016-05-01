@@ -1,0 +1,212 @@
+package practitionerClinic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import org.testng.annotations.Test;
+
+public class BuildProtocol {
+	
+@Test(priority=1)
+	
+	public void protocol() throws Exception
+	
+	{
+		
+	WebDriver driver;	
+	driver = new FirefoxDriver();
+	
+	 //File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+	
+	//	System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+		
+	//	driver = new PhantomJSDriver();
+	
+	driver.get("https://qa3.kinductdev.com/login");
+	
+	driver.manage().window().maximize();
+	
+	driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");
+	
+	
+	driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("L3@d3r!");
+	
+	
+	
+	//Login button
+	
+	driver.findElement(By.xpath(".//*[@id='login_form']/div[3]/div/button")).click();
+	
+	
+	
+	//Kinduct Clinic
+	
+	driver.findElement(By.xpath(".//*[@id='link_83356']")).click();
+	
+	
+	
+	//Demo Practitioner
+	
+	
+	
+	
+
+	driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")).click();
+	
+		
+		//Rehab 
+				
+		
+		
+		driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/a/span[1]")).click();
+		
+		
+		//Protocols
+		
+		//login.wait(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a");
+		
+		driver.findElement(By.xpath(".//*[@id='primary']/div[2]/ul/li[2]/ul/li[2]/a")).click();
+		
+		//Build Protocol
+		
+		//login.wait(".//*[@id='content']/div[1]/a");
+		
+		driver.findElement(By.xpath(".//*[@id='content']/div[1]/a")).click();
+		
+		//Workout name
+		
+		//login.wait(".//*[@id='workout_name']");
+		
+		driver.findElement(By.xpath(".//*[@id='workout_name']")).sendKeys("Protocol Test");
+		
+		//
+		
+		//Body Part focus
+		
+		//login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button");
+		
+		driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button")).click();
+		
+		//Ankle
+		
+		//login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/ul/li[3]/a/label/input");
+		
+		driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/ul/li[3]/a/label/input")).click();
+		
+		//Body Part focus
+		
+		//login.wait(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button");
+		
+		driver.findElement(By.xpath(".//*[@id='workout_builder_header']/div/div[1]/div[2]/div/div/div/button")).click();
+		/*
+		//Library
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/button")).click();
+		
+		//Any
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/ul/li[1]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/ul/li[1]/a/label/input")).click();
+		
+		//Library
+		
+		login.wait(".//*[@id='exercise_find_box']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise_find_box']/div[2]/div/button")).click();
+		
+		//Body part
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/button")).click();
+		
+		//Any
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/ul/li[1]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/ul/li[1]/a/label/input")).click();
+		
+		//Body part
+		
+		login.wait(".//*[@id='exercise-filters']/div[1]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[1]/div/button")).click();
+		
+		//Equipment
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/button")).click();
+		
+		//Any
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/ul/li[1]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/ul/li[1]/a/label/input")).click();
+		
+		//Equipment
+		
+		login.wait(".//*[@id='exercise-filters']/div[2]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[2]/div/button")).click();
+		
+		//Type
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/button")).click();
+		
+		//Any
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/ul/li[1]/a/label/input");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/ul/li[1]/a/label/input")).click();
+		
+		//Type
+		
+		login.wait(".//*[@id='exercise-filters']/div[3]/div/button");
+		
+		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/button")).click();
+		
+		//login.driver.findElement(By.id("exercise_list")).click();
+		
+		//login.driver.findElement(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']")).click();
+		
+		//Add Exercise
+		
+(new WebDriverWait(login.driver,30)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='exer_perf_three_point_lunge']/div[2]")));
+		
+		
+		login.driver.findElement(By.xpath(".//*[@id='exer_perf_three_point_lunge']/div[2]")).click();
+		
+		(new WebDriverWait(login.driver,30)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']")));
+		
+		
+		login.driver.findElement(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']")).click();
+		*/
+		//(new WebDriverWait(login.driver,30)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']")));
+		
+		//WebElement element = login.driver.findElement(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']"));
+		
+		driver.findElement(By.xpath(".//*[@id='img_perf_three_point_lunge|11739']")).click();
+		
+		//JavascriptExecutor js = (JavascriptExecutor)login.driver;
+		//js.executeScript("arguments[0].click();", element);
+		
+		//Submit
+		
+		//login.wait(".//*[@id='submit_button']");
+		
+		//login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		
+		driver.quit();
+	}	
+
+}

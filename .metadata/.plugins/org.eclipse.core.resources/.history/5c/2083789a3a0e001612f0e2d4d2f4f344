@@ -1,0 +1,31 @@
+package practitionerClinic;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+
+import com.kinduct.MavenFramework.Excel;
+
+public class Status {
+	
+	public void statusTitle(int start,int end,WebDriver driver,String title) throws Exception
+	{
+		
+		if (driver.getTitle().equalsIgnoreCase(title)) 
+		{
+		
+			Excel e = new Excel();
+		 
+			Assert.assertEquals(driver.getTitle(), title);
+			e.excel(start,end,"PASS");
+			
+		}
+		else
+		{
+			Excel e = new Excel();
+			Assert.assertEquals(driver.getTitle(), title);
+			e.excel(start,end,"FAIL");
+			
+		}
+	}
+
+}

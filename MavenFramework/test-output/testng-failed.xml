@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practitionerClinic.Protocol">
+      <class name="patientClinic.Login">
         <methods>
-          <include name="Protocol"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- practitionerClinic.Protocol -->
+      </class> <!-- patientClinic.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,7 +7,7 @@ import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
+//import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.kinduct.MavenFramework.Excel;
@@ -61,29 +61,21 @@ public class PracLogin {
 			wait(".//*[@id='link_83356']");
 			
 			//Demo Practitioner
-			(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")));
 			
+			
+			
+			//(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")));
+			wait(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]");
 
 			driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")).click();
+			
+			/*
+			Status s = new Status();
+			
+			s.statusTitle(1,5,driver,"Kinduct Clinic - Home");
 		
-			
-			if (driver.getTitle().equalsIgnoreCase("Kinduct Clinic - Home")) {
-				
-				
-			  Excel e = new Excel();
-				
-				e.excel(1,5,"PASS");
-				
-			}
-			else
-			{
-				Excel e = new Excel();
-				
-				e.excel(1,5,"FAIL");
-				
-			}
-			//Assert.assertTrue(flag, "Patient Login");
-			
+		
+			*/
 			
 			
 			

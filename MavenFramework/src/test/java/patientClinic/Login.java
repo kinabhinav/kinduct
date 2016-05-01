@@ -9,6 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.kinduct.MavenFramework.Excel;
@@ -43,14 +46,18 @@ public void wait(  String text)
 	@Test
 	public  void login() throws Exception
 	{
-		 driver = new FirefoxDriver();
-		//File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+		 //driver = new FirefoxDriver();
+		File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 		 
-		//System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
-		
-		//driver = new PhantomJSDriver();
-		
-		
+		System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+		DesiredCapabilities caps = new DesiredCapabilities();
+		driver = new PhantomJSDriver(caps);
+		/*
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setJavascriptEnabled(true); // not really needed: JS enabled by default
+		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs");
+		WebDriver driver = new PhantomJSDriver(caps);
+*/
 		driver.get("https://qa3.kinductdev.com/login/site/core");
 		
 		driver.manage().window().maximize();

@@ -1,0 +1,64 @@
+package com.kinduct.MavenFramework;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
+import practitionerClinic.PracLogin;
+
+public class SortTextPrac {
+	public void sorttext(String xpathfilter,String xpathtext,int row1,int row2) throws Exception
+	
+	{
+				PracLogin login= new PracLogin();
+		
+				login.wait(xpathfilter);
+						
+				login.driver.findElement(By.xpath(xpathfilter)).click();
+				
+				login.wait(xpathtext);
+				
+				String before = login.driver.findElement(By.xpath(xpathtext)).getText();
+					
+				System.out.println(before);
+					
+				//filer  	
+				
+				login.wait(xpathfilter);
+				
+				login.driver.findElement(By.xpath(xpathfilter)).click();
+				
+				login.wait(xpathtext);
+				
+				String after = login.driver.findElement(By.xpath(xpathtext)).getText();
+				
+				System.out.println(after);
+				
+				if(after.equalsIgnoreCase(before))
+				
+				{
+					 Excel e = new Excel();
+						
+						e.excel(row1,row2,"FAILED");
+						
+						Assert.assertFalse(false);
+						
+						login.driver.quit();
+						
+					}
+					else
+					{
+						Excel e = new Excel();
+						
+						e.excel(row1,row2,"PASSED");
+						
+						Assert.assertFalse(false);
+						
+						login.driver.quit();
+						
+					
+					
+				}
+
+	}
+
+}
