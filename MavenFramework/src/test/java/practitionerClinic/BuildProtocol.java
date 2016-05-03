@@ -40,7 +40,7 @@ public class BuildProtocol {
 		
 		login.wait(".//*[@id='workout_name']");
 		
-		login.driver.findElement(By.xpath(".//*[@id='workout_name']")).sendKeys(" Ankle Protocol Test");
+		login.driver.findElement(By.xpath(".//*[@id='workout_name']")).sendKeys(" Second Protocol Test");
 		
 		//
 		
@@ -129,7 +129,7 @@ public class BuildProtocol {
 		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/ul/li[1]/a/label/input")).click();
 		
 		//Type
-		
+		login.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		login.wait(".//*[@id='exercise-filters']/div[3]/div/button");
 		
 		login.driver.findElement(By.xpath(".//*[@id='exercise-filters']/div[3]/div/button")).click();
@@ -142,17 +142,9 @@ public class BuildProtocol {
 		login.driver.findElement(By.xpath(".//*[@id='exercise-menu']/a[2]")).click();
 		
 		System.out.println("sdsadsa");
-		//WebElement exercise =login.driver.findElement(By.id("exercise_list"));
-		
-		//WebDriverWait wait = new WebDriverWait(login.driver, 5);
 
-		// while the following loop runs, the DOM changes - 
-		// page is refreshed, or element is removed and re-added
-		//wait.until((login.driver.findElement(By.id("exercise_list")));        
-
-		// now we're good - let's click the element
 		
-		login.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		login.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		login.wait(".//*[@id='add_exercise_div_perf_three_point_lunge']");
 		login.driver.findElement(By.xpath(".//*[@id='add_exercise_div_perf_three_point_lunge']")).click();
 		

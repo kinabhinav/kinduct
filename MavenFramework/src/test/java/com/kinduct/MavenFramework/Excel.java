@@ -19,7 +19,7 @@ public class Excel {
 	public  void excelpatient(int start,int end,String status) throws Exception
 	{
 		
-		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
+		File clinic = new File("/Users/abhatnagar/git/kinduct/MavenFramework/kinduct.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
@@ -54,7 +54,7 @@ public class Excel {
 	public  void exceladmin(int start,int end,String status) throws Exception
 	{
 		
-		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
+		File clinic = new File("/Users/abhatnagar/git/kinduct/MavenFramework/kinduct.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
@@ -91,7 +91,7 @@ public class Excel {
 		
 	
 		
-		File clinic = new File("/Users/abhatnagar/Documents/workspace/GIT/MavenFramework/kinduct.xlsx");
+		File clinic = new File("/Users/abhatnagar/git/kinduct/MavenFramework/kinduct.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
