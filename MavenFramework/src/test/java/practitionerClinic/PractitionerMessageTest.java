@@ -8,7 +8,7 @@ import com.kinduct.MavenFramework.Excel;
 
 import patientClinic.Login;
 
-public class PractitionerMessage {
+public class PractitionerMessageTest {
 	
 	@Test(priority=1)
 	public void postmessage() throws Exception
