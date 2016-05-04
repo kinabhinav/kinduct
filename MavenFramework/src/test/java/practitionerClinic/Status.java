@@ -38,7 +38,7 @@ public class Status {
 			
 			  Excel e = new Excel();
 				
-				e.excel(6,8,"PASS");
+				e.excel(start,end,"PASS");
 				
 				Assert.assertTrue(true);
 				
@@ -49,10 +49,38 @@ public class Status {
 			{
 				Excel e = new Excel();
 				
-				e.excel(6,8,"FAIL");
+				e.excel(start,end,"FAIL");
 				test =false;
 				
 				Assert.assertTrue(true);
+				
+				driver.quit();
+				
+			}
+		
+	}public void statusBooleanFalse(int start,int end,WebDriver driver,Boolean test) throws Exception
+	{
+		
+		if (test.equals(false)) {
+			
+			
+			  Excel e = new Excel();
+				
+				e.excel(start,end,"PASS");
+				
+				Assert.assertFalse(false);
+				
+				driver.quit();
+				
+			}
+			else
+			{
+				Excel e = new Excel();
+				
+				e.excel(start,end,"FAIL");
+				test =true;
+				
+				Assert.assertFalse(false);
 				
 				driver.quit();
 				

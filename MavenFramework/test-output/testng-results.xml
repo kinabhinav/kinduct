@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7398" started-at="2016-05-04T12:22:39Z" finished-at="2016-05-04T12:22:46Z">
+  <suite name="Default suite" duration-ms="78081" started-at="2016-05-04T15:29:47Z" finished-at="2016-05-04T15:31:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7398" started-at="2016-05-04T12:22:39Z" finished-at="2016-05-04T12:22:46Z">
-      <class name="practitionerClinic.PracLogin">
-        <test-method status="PASS" signature="login()[pri:0, instance:practitionerClinic.PracLogin@17f6480]" name="login" duration-ms="7381" started-at="2016-05-04T09:22:39Z" finished-at="2016-05-04T09:22:46Z">
+    <test name="Default test" duration-ms="78081" started-at="2016-05-04T15:29:47Z" finished-at="2016-05-04T15:31:05Z">
+      <class name="practitionerClinic.PractitionerMessage">
+        <test-method status="PASS" signature="postmessage()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="postmessage" duration-ms="17602" started-at="2016-05-04T12:29:47Z" finished-at="2016-05-04T12:30:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- practitionerClinic.PracLogin -->
+        </test-method> <!-- postmessage -->
+        <test-method status="PASS" signature="postmessage_cancel_link()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="postmessage_cancel_link" duration-ms="10434" started-at="2016-05-04T12:30:05Z" finished-at="2016-05-04T12:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmessage_cancel_link -->
+        <test-method status="PASS" signature="postmessage_hide_message()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="postmessage_hide_message" duration-ms="9224" started-at="2016-05-04T12:30:15Z" finished-at="2016-05-04T12:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmessage_hide_message -->
+        <test-method status="PASS" signature="postmessage_show_hidden_message()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="postmessage_show_hidden_message" duration-ms="9877" started-at="2016-05-04T12:30:24Z" finished-at="2016-05-04T12:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postmessage_show_hidden_message -->
+        <test-method status="PASS" signature="delete_message()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="delete_message" duration-ms="8654" started-at="2016-05-04T12:30:34Z" finished-at="2016-05-04T12:30:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_message -->
+        <test-method status="PASS" signature="respondmessage()[pri:0, instance:practitionerClinic.PractitionerMessage@7f63425a]" name="respondmessage" duration-ms="22271" started-at="2016-05-04T12:30:43Z" finished-at="2016-05-04T12:31:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- respondmessage -->
+      </class> <!-- practitionerClinic.PractitionerMessage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

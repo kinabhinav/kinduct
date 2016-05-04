@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practitionerClinic.PracLogin">
+      <class name="practitionerClinic.PractitionerMessage">
         <methods>
-          <include name="login"/>
+          <include name="showhiddenmessage"/>
         </methods>
-      </class> <!-- practitionerClinic.PracLogin -->
+      </class> <!-- practitionerClinic.PractitionerMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

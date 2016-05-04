@@ -9,19 +9,19 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pages.PractitionerLogin;
+//import pages.PractitionerLogin;
 
-public class TestLogin {
+public class TestLogin { /*
 	
 	WebDriver driver;
 	
-	PractitionerLogin objLogin;
+	//PractitionerLogin objLogin;
 	 
     Organization objorg;
  
      
  
-    @BeforeTest
+   // @BeforeTest
  
     public void setup(){
  
@@ -33,13 +33,13 @@ public class TestLogin {
  
     }
     
-    @Test(priority=0)
+   // @Test(priority=0)
     
     public void test_Home_Page_Appear_Correct(){
  
         //Create Login Page object
  
-    objLogin = new PractitionerLogin(driver);
+   // objLogin = new PractitionerLogin(driver);
     
    // objLogin = new l
  
@@ -51,7 +51,7 @@ public class TestLogin {
  
   
  
-    }
+    } */
 
 
 }
