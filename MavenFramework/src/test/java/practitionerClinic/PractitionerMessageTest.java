@@ -346,6 +346,7 @@ public class PractitionerMessageTest {
 		}
 	@Test(priority =6)
 	public void respondmessage() throws Exception
+	//public static void main (String []args)throws Exception
 	{
 Login loginpatient = new Login();
 		

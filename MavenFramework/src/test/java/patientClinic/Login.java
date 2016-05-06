@@ -6,7 +6,9 @@ import org.testng.annotations.Test;
 import java.io.File;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -55,7 +57,7 @@ public void wait(  String text)
 		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs");
 		WebDriver driver = new PhantomJSDriver(caps);
 */
-		driver.get("https://qa3.kinductdev.com/login/site/core");
+		driver.get("https://qa3.kinductdev.com/login");
 		
 		driver.manage().window().maximize();
 		
@@ -68,7 +70,8 @@ public void wait(  String text)
 		wait(".//*[@id='login_form']/div[3]/div/button");
 		
 		//Login button
-		
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("javascript:window.scrollBy(250,350)");
 		driver.findElement(By.xpath(".//*[@id='login_form']/div[3]/div/button")).click();
 		
 		wait(".//*[@id='link_83356']");
@@ -80,7 +83,10 @@ public void wait(  String text)
 		wait(".//*[@id='link_83356']");
 		
 		//patient
+		WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]"));
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("javascript:window.scrollBy(250,350)");
 		driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]")).click();
 		
 				

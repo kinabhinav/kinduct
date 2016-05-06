@@ -5,8 +5,14 @@ import org.testng.annotations.Test;
 import java.io.File;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,7 +36,8 @@ public class PracLogin {
 		public  void login() throws Exception
 		{
 			 driver = new FirefoxDriver();
-			
+			  
+			  
 			 //File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 			
 			//	System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
@@ -40,6 +47,8 @@ public class PracLogin {
 			driver.get("https://qa3.kinductdev.com/login");
 			
 			driver.manage().window().maximize();
+			//driver.manage().window().setPosition(new Point(0,0));
+			//driver.manage().window().setSize(new Dimension(1024,768));
 			
 			driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");
 			
@@ -50,7 +59,21 @@ public class PracLogin {
 			
 			//Login button
 			
+			
+			
 			driver.findElement(By.xpath(".//*[@id='login_form']/div[3]/div/button")).click();
+			
+			WebElement Image = driver.findElement(By.xpath(".//*[@id='link_83356']"));
+			
+			Point point = Image.getLocation();
+			
+			int xcord = point.getX();
+			
+			System.out.println(xcord);
+			int ycord = point.getY();
+			System.out.println(ycord);
+			
+			((JavascriptExecutor)driver).executeScript("71", 413);
 			
 			wait(".//*[@id='link_83356']");
 			
@@ -58,11 +81,14 @@ public class PracLogin {
 			
 			driver.findElement(By.xpath(".//*[@id='link_83356']")).click();
 			
-			wait(".//*[@id='link_83356']");
+			
 			
 			//Demo Practitioner
 			
+			WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]"));
 			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("javascript:window.scrollBy(250,350)");
 			
 			//(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")));
 			wait(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]");
