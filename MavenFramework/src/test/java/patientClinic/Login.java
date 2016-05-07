@@ -1,8 +1,6 @@
 package patientClinic;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
 import java.io.File;
 
 import org.openqa.selenium.By;
@@ -14,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.kinduct.MavenFramework.Excel;
+
 
 public class Login {
 	public  WebDriver driver;  
@@ -46,11 +45,13 @@ public void wait(  String text)
 	public  void login() throws Exception
 	{
 		 driver = new FirefoxDriver();
-		/*File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 		 
-		System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
-		DesiredCapabilities caps = new DesiredCapabilities();
-		driver = new PhantomJSDriver(caps);
+		 
+		//File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+		 
+		//System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+		
+		//driver = new PhantomJSDriver();
 		/*
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setJavascriptEnabled(true); // not really needed: JS enabled by default

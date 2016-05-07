@@ -11,6 +11,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -35,14 +36,9 @@ public class PracLogin {
 		@Test
 		public  void login() throws Exception
 		{
-			 driver = new FirefoxDriver();
-			  
-			  
-			 //File src =  new File("/Users/abhatnagar/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs") ;
+			 driver = new FirefoxDriver(); 
+		
 			
-			//	System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
-				
-			//	driver = new PhantomJSDriver();
 			
 			driver.get("https://qa3.kinductdev.com/login");
 			
@@ -62,6 +58,27 @@ public class PracLogin {
 			
 			
 			driver.findElement(By.xpath(".//*[@id='login_form']/div[3]/div/button")).click();
+			
+			
+			
+			//----------------
+			
+			wait(".//*[@id='link_405']");
+			
+			//Login button
+			
+			
+			
+			driver.findElement(By.xpath(".//*[@id='link_405']")).click();
+			
+			///
+			wait(".//*[@id='child-organizations']/tbody/tr[21]/td[1]/a");
+			
+			//Login button
+			
+			
+			
+			driver.findElement(By.xpath(".//*[@id='child-organizations']/tbody/tr[21]/td[1]/a")).click();
 			
 			WebElement Image = driver.findElement(By.xpath(".//*[@id='link_83356']"));
 			

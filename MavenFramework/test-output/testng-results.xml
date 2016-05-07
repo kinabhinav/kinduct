@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7672" started-at="2016-05-06T16:17:09Z" finished-at="2016-05-06T16:17:17Z">
+  <suite name="Default suite" duration-ms="24090" started-at="2016-05-06T22:37:59Z" finished-at="2016-05-06T22:38:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7672" started-at="2016-05-06T16:17:09Z" finished-at="2016-05-06T16:17:17Z">
-      <class name="practitionerClinic.PracLogin">
-        <test-method status="PASS" signature="login()[pri:0, instance:practitionerClinic.PracLogin@17f6480]" name="login" duration-ms="7654" started-at="2016-05-06T13:17:09Z" finished-at="2016-05-06T13:17:17Z">
+    <test name="Default test" duration-ms="24090" started-at="2016-05-06T22:37:59Z" finished-at="2016-05-06T22:38:23Z">
+      <class name="patientClinic.Login">
+        <test-method status="PASS" signature="login()[pri:0, instance:patientClinic.Login@4411d970]" name="login" duration-ms="24069" started-at="2016-05-06T19:37:59Z" finished-at="2016-05-06T19:38:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- practitionerClinic.PracLogin -->
+      </class> <!-- patientClinic.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
