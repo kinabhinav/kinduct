@@ -63,13 +63,13 @@ public class PracLogin {
 			
 			//----------------
 			
-			wait(".//*[@id='link_405']");
+			wait(".//*[@id='organization-roles']/div/div[1]/div/a");
 			
 			//Login button
 			
 			
 			
-			driver.findElement(By.xpath(".//*[@id='link_405']")).click();
+			driver.findElement(By.xpath(".//*[@id='organization-roles']/div/div[1]/div/a")).click();
 			
 			///
 			wait(".//*[@id='child-organizations']/tbody/tr[21]/td[1]/a");
