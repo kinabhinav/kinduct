@@ -4,11 +4,12 @@ import org.testng.annotations.Test;
 import java.io.File;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+//import org.openqa.selenium.phantomjs.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.kinduct.MavenFramework.Excel;
@@ -44,14 +45,15 @@ public void wait(  String text)
 	@Test
 	public  void login() throws Exception
 	{
-		 driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
+		driver.manage().window().setSize(new Dimension(1024,768));
+	/* 
+		File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 		 
-		 
-		//File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
-		 
-		//System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
-		
-		//driver = new PhantomJSDriver();
+		System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
+		   // String binary = System.getProperty("phantomjs.binary");
+
+		driver = new PhantomJSDriver();
 		/*
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setJavascriptEnabled(true); // not really needed: JS enabled by default
@@ -60,7 +62,7 @@ public void wait(  String text)
 */
 		driver.get("https://qa3.kinductdev.com/login");
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		
 		driver.findElement(By.xpath(".//*[@id='username']")).clear();
 		driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");
@@ -84,11 +86,11 @@ public void wait(  String text)
 		wait(".//*[@id='link_83356']");
 		
 		//patient
-		WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]"));
+		WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[4]/td[5]/a[3]/span[1]"));
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("javascript:window.scrollBy(250,350)");
-		driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]")).click();
+		driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[4]/td[5]/a[3]/span[1]")).click();
 		
 				
 		if (driver.getTitle().equalsIgnoreCase("Kinduct Clinic - Home")) {

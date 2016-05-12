@@ -31,14 +31,75 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">63.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">patientClinic.PatientDashboard</td><td><a href="#m1"><b>procedure</b>  </a></td><td class="numi">1</td><td>1463076701200</td><td class="numi">23879</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">patientClinic.Login</td><td><a href="#m1"><b>login</b>  </a></td><td class="numi">1</td><td>1462574279760</td><td class="numi">24069</td></tr>
+<tr class="passedodd"><td rowspan="3">patientClinic.PatientDashboard</td><td><a href="#m2"><b>condition</b>  </a></td><td class="numi">1</td><td>1463076684290</td><td class="numi">16908</td></tr><tr class="passedodd"><td><a href="#m3"><b>anatomy</b>  </a></td><td class="numi">1</td><td>1463076725622</td><td class="numi">11947</td></tr><tr class="passedodd"><td><a href="#m4"><b>Functional_Anatomy</b>  </a></td><td class="numi">1</td><td>1463076737570</td><td class="numi">10173</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">patientClinic.Login:login</h2>
+<h2 id="m1">patientClinic.PatientDashboard:procedure</h2>
+<div style="padding-left:3em">
+<p>Timed out after 15 seconds waiting for element to be clickable: By.xpath: .//.//*[@id=&apos;profile_main&apos;]/article/div[2]/div[1]/div[2]/div/div[2]/a/img
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c57e45cf-974d-044a-8f5c-d3a2a7c7b9e3</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+<br/>at patientClinic.Login.wait(Login.java:39)
+<br/>at patientClinic.PatientDashboard.procedure(PatientDashboard.java:88)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//.//*[@id=&apos;profile_main&apos;]/article/div[2]/div[1]/div[2]/div/div[2]/a/img&quot;}
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c57e45cf-974d-044a-8f5c-d3a2a7c7b9e3
+*** Element info: {Using=xpath, value=.//.//*[@id=&apos;profile_main&apos;]/article/div[2]/div[1]/div[2]/div/div[2]/a/img}</p>
+sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+<br/>at patientClinic.Login.wait(Login.java:39)
+<br/>at patientClinic.PatientDashboard.procedure(PatientDashboard.java:88)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//.//*[@id=&apos;profile_main&apos;]/article/div[2]/div[1]/div[2]/div/div[2]/a/img&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous1381029679407056941webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous1381029679407056941webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous1381029679407056941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous1381029679407056941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous1381029679407056941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">patientClinic.PatientDashboard:condition</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">patientClinic.PatientDashboard:Functional_Anatomy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">patientClinic.PatientDashboard:anatomy</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

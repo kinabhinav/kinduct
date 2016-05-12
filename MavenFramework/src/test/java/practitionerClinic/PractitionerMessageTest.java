@@ -12,6 +12,9 @@ public class PractitionerMessageTest {
 	
 	@Test(priority=1)
 	public void postmessage() throws Exception
+	
+	//public static void main(String[] args)throws Exception
+	
 	{
 
 		PracLogin login = new PracLogin();

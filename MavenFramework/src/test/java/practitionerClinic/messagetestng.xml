@@ -10,6 +10,7 @@
       <class name="patientClinic.PatientNotes"/>
       <class name="patientClinic.PatientMessage"/>
       <class name="patientClinic.PatientCalendar"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
