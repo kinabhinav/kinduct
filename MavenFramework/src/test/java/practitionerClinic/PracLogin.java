@@ -41,7 +41,7 @@ public class PracLogin {
 			driver = new PhantomJSDriver();  //*[@id="users"]/tbody/tr[5]/td[5]/a[3]/span[1]
 		*/	
 			
-			driver.get("https://qa3.kinductdev.com/login");
+			driver.get("https://qa9.kinductdev.com/login");
 			
 			driver.manage().window().maximize();
 			//driver.manage().window().setPosition(new Point(0,0));
@@ -62,25 +62,27 @@ public class PracLogin {
 			
 			
 			
-			WebElement Image = driver.findElement(By.xpath(".//*[@id='link_83356']"));
+		//	WebElement Image = driver.findElement(By.xpath(".//*[@id='link_83356']"));
 			
-			Point point = Image.getLocation();
+			//Point point = Image.getLocation();
 			
-			int xcord = point.getX();
+			//int xcord = point.getX();
 			
-			System.out.println(xcord);
-			int ycord = point.getY();
-			System.out.println(ycord);
+			//System.out.println(xcord);
+			//int ycord = point.getY();
+			//System.out.println(ycord);
 			
 			((JavascriptExecutor)driver).executeScript("71", 413);
 			
-			wait(".//*[@id='link_83356']");
+			//wait(".//*[@id='link_83356']");
+			
+			wait(".//*[@id='org_chart']/ul/li/ul/li[11]/a");
 			
 			//Kinduct Clinic
 			
-			driver.findElement(By.xpath(".//*[@id='link_83356']")).click();
+			//driver.findElement(By.xpath(".//*[@id='link_83356']")).click();
 			
-			
+			driver.findElement(By.xpath(".//*[@id='org_chart']/ul/li/ul/li[11]/a")).click();
 			
 			//Demo Practitioner
 			

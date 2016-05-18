@@ -19,14 +19,14 @@ public class Excel {
 	public  void excelpatient(int start,int end,String status) throws Exception
 	{
 		
-		File clinic = new File("/Users/abhatnagar/git/kinduct/MavenFramework/kinduct.xlsx");
+		File clinic = new File("/Users/abhatnagar/git/kinduct/MavenFramework/Clinic.xlsx");
 		
 		FileInputStream file = new FileInputStream(clinic);
 			
 		
 		XSSFWorkbook wb =new XSSFWorkbook(file);
 		
-		XSSFSheet sheet = wb.getSheetAt(4);
+		XSSFSheet sheet = wb.getSheetAt(1);
 		
 		//String data0 = sheet.getRow(1).getCell(5).getStringCellValue();
 		
@@ -98,7 +98,7 @@ public class Excel {
 		
 		XSSFWorkbook wb =new XSSFWorkbook(file);
 		
-		XSSFSheet sheet = wb.getSheetAt(2);
+		XSSFSheet sheet = wb.getSheetAt(1);
 		
 	
 		for (int i=start;i<end;i++)
