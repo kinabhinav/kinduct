@@ -46,7 +46,7 @@ public void wait(  String text)
 	public  void login() throws Exception
 	{
 		driver = new FirefoxDriver();
-		driver.manage().window().setSize(new Dimension(1024,768));
+		//driver.manage().window().setSize(new Dimension(1024,768));
 	/* 
 		File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 		 
@@ -62,7 +62,7 @@ public void wait(  String text)
 */
 		driver.get("https://qa3.kinductdev.com/login");
 		
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		driver.findElement(By.xpath(".//*[@id='username']")).clear();
 		driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");

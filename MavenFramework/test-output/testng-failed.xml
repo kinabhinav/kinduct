@@ -5,7 +5,9 @@
     <classes>
       <class name="practitionerClinic.FAQ_Builder">
         <methods>
-          <include name="faq_builder_sort_Question"/>
+          <include name="create_faq_builder_Practitioner"/>
+          <include name="Search_faq_builder"/>
+          <include name="delete_faq_builder"/>
         </methods>
       </class> <!-- practitionerClinic.FAQ_Builder -->
     </classes>

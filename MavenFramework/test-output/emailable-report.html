@@ -31,65 +31,125 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">24</td><td class="numi">24</td><td class="numi">0</td><td class="numi">0</td><td class="numi">277.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">64.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">patientClinic.PatientAssessment</td><td><a href="#m1"><b>Assessment_view_icon</b>  </a></td><td class="numi">1</td><td>1463532858964</td><td class="numi">14748</td></tr><tr class="passedodd"><td><a href="#m2"><b>Assessment_view_email</b>  </a></td><td class="numi">1</td><td>1463532873713</td><td class="numi">13575</td></tr><tr class="passedodd"><td><a href="#m3"><b>Assessment_View_Print</b>  </a></td><td class="numi">1</td><td>1463532887290</td><td class="numi">11839</td></tr><tr class="passedodd"><td><a href="#m4"><b>Assessment_View_Back</b>  </a></td><td class="numi">1</td><td>1463532899130</td><td class="numi">13240</td></tr>
-<tr class="passedeven"><td rowspan="2">patientClinic.PatientJournal</td><td><a href="#m5"><b>Journal_View</b>  </a></td><td class="numi">1</td><td>1463532912372</td><td class="numi">12569</td></tr><tr class="passedeven"><td><a href="#m6"><b>Journal_New_Entry</b>  </a></td><td class="numi">1</td><td>1463532924942</td><td class="numi">14740</td></tr>
-<tr class="passedodd"><td rowspan="5">patientClinic.PatientResources</td><td><a href="#m7"><b>Add_Resources</b>  </a></td><td class="numi">1</td><td>1463532939682</td><td class="numi">10152</td></tr><tr class="passedodd"><td><a href="#m8"><b>Edit_Resources</b>  </a></td><td class="numi">1</td><td>1463532949834</td><td class="numi">10832</td></tr><tr class="passedodd"><td><a href="#m9"><b>Resources_Edit_Cancel_link</b>  </a></td><td class="numi">1</td><td>1463532960666</td><td class="numi">9888</td></tr><tr class="passedodd"><td><a href="#m10"><b>Resources_Delete</b>  </a></td><td class="numi">1</td><td>1463532970554</td><td class="numi">9372</td></tr><tr class="passedodd"><td><a href="#m11"><b>Resources_Add_Cancel_link</b>  </a></td><td class="numi">1</td><td>1463532979926</td><td class="numi">9792</td></tr>
-<tr class="passedeven"><td rowspan="5">patientClinic.PatientNotes</td><td><a href="#m12"><b>Add_Note</b>  </a></td><td class="numi">1</td><td>1463532989719</td><td class="numi">10304</td></tr><tr class="passedeven"><td><a href="#m13"><b>Notes_Add_Cancel_link</b>  </a></td><td class="numi">1</td><td>1463533000025</td><td class="numi">10032</td></tr><tr class="passedeven"><td><a href="#m14"><b>Notes_Edit</b>  </a></td><td class="numi">1</td><td>1463533010057</td><td class="numi">10834</td></tr><tr class="passedeven"><td><a href="#m15"><b>Notes_Edit_Cancel_link</b>  </a></td><td class="numi">1</td><td>1463533020892</td><td class="numi">10290</td></tr><tr class="passedeven"><td><a href="#m16"><b>Notes_Delete</b>  </a></td><td class="numi">1</td><td>1463533031183</td><td class="numi">10126</td></tr>
-<tr class="passedodd"><td rowspan="5">patientClinic.PatientMessage</td><td><a href="#m17"><b>Post_Message</b>  </a></td><td class="numi">1</td><td>1463533041310</td><td class="numi">14438</td></tr><tr class="passedodd"><td><a href="#m18"><b>Post_Message_Cancel_link</b>  </a></td><td class="numi">1</td><td>1463533055748</td><td class="numi">11966</td></tr><tr class="passedodd"><td><a href="#m19"><b>Message_Hide</b>  </a></td><td class="numi">1</td><td>1463533067715</td><td class="numi">11853</td></tr><tr class="passedodd"><td><a href="#m20"><b>Message_Show</b>  </a></td><td class="numi">1</td><td>1463533079568</td><td class="numi">10484</td></tr><tr class="passedodd"><td><a href="#m21"><b>Message_Delete</b>  </a></td><td class="numi">1</td><td>1463533090053</td><td class="numi">11454</td></tr>
-<tr class="passedeven"><td rowspan="3">patientClinic.PatientCalendar</td><td><a href="#m22"><b>Calendar_Add_Event</b>  </a></td><td class="numi">1</td><td>1463533101508</td><td class="numi">13402</td></tr><tr class="passedeven"><td><a href="#m23"><b>Calendar_Add_Event_Cancel</b>  </a></td><td class="numi">1</td><td>1463533114911</td><td class="numi">11583</td></tr><tr class="passedeven"><td><a href="#m24"><b>Calendar_Export</b>  </a></td><td class="numi">1</td><td>1463533126495</td><td class="numi">10212</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">practitionerClinic.FAQ_Builder</td><td><a href="#m1"><b>create_faq_builder_Practitioner</b>  </a></td><td class="numi">1</td><td>1463684036511</td><td class="numi">5568</td></tr><tr class="failedodd"><td><a href="#m2"><b>delete_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684067291</td><td class="numi">23217</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">practitionerClinic.FAQ_Builder</td><td><a href="#m3"><b>Search_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684101029</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">practitionerClinic.FAQ_Builder</td><td><a href="#m4"><b>create_faq_builder_cancel_button</b>  </a></td><td class="numi">1</td><td>1463684042087</td><td class="numi">13396</td></tr><tr class="passedodd"><td><a href="#m5"><b>Search_Clear_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684055486</td><td class="numi">11804</td></tr><tr class="passedodd"><td><a href="#m6"><b>faq_builder_sort_Question</b>  </a></td><td class="numi">1</td><td>1463684090520</td><td class="numi">10508</td></tr>
 </table>
-<h1>Test</h1>
-<h2 id="m1">patientClinic.PatientMessage:Message_Hide</h2>
+<h1>Default test</h1>
+<h2 id="m1">practitionerClinic.FAQ_Builder:create_faq_builder_Practitioner</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 17824256-5190-0644-84e3-8e570cea8fcf</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+<br/>at practitionerClinic.PracLogin.login(PracLogin.java:75)
+<br/>at practitionerClinic.FAQ_Builder.create_faq_builder_Practitioner(FAQ_Builder.java:30)
+<br/>25 lines not shown
+<p>Caused by Connection reset</p>
+java.net.SocketInputStream.read(SocketInputStream.java:209)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br/>at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+<br/>at practitionerClinic.PracLogin.login(PracLogin.java:75)
+<br/>at practitionerClinic.FAQ_Builder.create_faq_builder_Practitioner(FAQ_Builder.java:30)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">patientClinic.PatientNotes:Notes_Edit_Cancel_link</h2>
+<h2 id="m2">practitionerClinic.FAQ_Builder:delete_faq_builder</h2>
+<div style="padding-left:3em">
+<p>Timed out after 10 seconds waiting for element to be clickable: By.xpath: .//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1e7d9b07-97ef-da46-b5db-2f8c4794a601</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+<br/>at practitionerClinic.PracLogin.wait(PracLogin.java:26)
+<br/>at practitionerClinic.FAQ_Builder.delete_faq_builder(FAQ_Builder.java:401)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span&quot;}
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1e7d9b07-97ef-da46-b5db-2f8c4794a601
+*** Element info: {Using=xpath, value=.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span}</p>
+sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+<br/>at practitionerClinic.PracLogin.wait(PracLogin.java:26)
+<br/>at practitionerClinic.FAQ_Builder.delete_faq_builder(FAQ_Builder.java:401)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+<br/>1 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">patientClinic.PatientJournal:Journal_New_Entry</h2>
+<h2 id="m3">practitionerClinic.FAQ_Builder:Search_faq_builder</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">patientClinic.PatientMessage:Message_Show</h2>
+<h2 id="m4">practitionerClinic.FAQ_Builder:faq_builder_sort_Question</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">patientClinic.PatientMessage:Message_Delete</h2>
+<h2 id="m5">practitionerClinic.FAQ_Builder:Search_Clear_faq_builder</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">patientClinic.PatientNotes:Notes_Edit</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">patientClinic.PatientNotes:Add_Note</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">patientClinic.PatientResources:Resources_Add_Cancel_link</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">patientClinic.PatientMessage:Post_Message</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">patientClinic.PatientAssessment:Assessment_view_icon</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">patientClinic.PatientAssessment:Assessment_view_email</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">patientClinic.PatientMessage:Post_Message_Cancel_link</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">patientClinic.PatientResources:Edit_Resources</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">patientClinic.PatientCalendar:Calendar_Export</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">patientClinic.PatientCalendar:Calendar_Add_Event_Cancel</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">patientClinic.PatientResources:Resources_Edit_Cancel_link</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">patientClinic.PatientAssessment:Assessment_View_Print</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">patientClinic.PatientResources:Resources_Delete</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">patientClinic.PatientAssessment:Assessment_View_Back</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">patientClinic.PatientCalendar:Calendar_Add_Event</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">patientClinic.PatientResources:Add_Resources</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">patientClinic.PatientNotes:Notes_Add_Cancel_link</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">patientClinic.PatientNotes:Notes_Delete</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">patientClinic.PatientJournal:Journal_View</h2>
+<h2 id="m6">practitionerClinic.FAQ_Builder:create_faq_builder_cancel_button</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

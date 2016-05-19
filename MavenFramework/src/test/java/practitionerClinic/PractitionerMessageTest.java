@@ -10,10 +10,10 @@ import patientClinic.Login;
 
 public class PractitionerMessageTest {
 	
-	@Test(priority=1)
-	public void postmessage() throws Exception
+	//@Test(priority=1)
+	//public void postmessage() throws Exception
 	
-	//public static void main(String[] args)throws Exception
+	public static void main(String[] args)throws Exception
 	
 	{
 
@@ -56,9 +56,9 @@ public class PractitionerMessageTest {
 	
 		// Select button 
 		
-		login.wait(".//*[@id='multi_select_user']/div[2]/div/div[3]/button");
+		login.wait(".//*[@id='multi_select_user']/div/div/div[3]/button");
 		
-		login.driver.findElement(By.xpath(".//*[@id='multi_select_user']/div[2]/div/div[3]/button")).click();
+		login.driver.findElement(By.xpath(".//*[@id='multi_select_user']/div/div/div[3]/button")).click();
 		
 		if(i==0)
 		{

@@ -5,21 +5,18 @@
   <groupId>com.kinduct</groupId>
   <artifactId>MavenFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
   <packaging>jar</packaging>
 
   <name>MavenFramework</name>
   <url>http://maven.apache.org</url>
 
 
-	
-
-
-
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    
-
+   
+  
      
   </properties>
   
@@ -27,8 +24,6 @@
   <dependencies>
   
 
-
-  
   
   
     <dependency>
@@ -37,10 +32,6 @@
   <version>6.8</version>
   <scope>test</scope>
 </dependency>
-
-
-
-
 
 
 <dependency>
@@ -55,10 +46,14 @@
   <version>3.5.1</version>
   <type>maven-plugin</type>
 </dependency>
+
+
 <dependency>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-surefire-plugin</artifactId>
   <version>2.19.1</version>
+  
+  
   <type>maven-plugin</type>
 </dependency>
 

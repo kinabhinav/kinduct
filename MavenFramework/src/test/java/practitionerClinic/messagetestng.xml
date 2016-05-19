@@ -5,11 +5,14 @@
     <classes>
       
       <class name="patientClinic.PatientAssessment"/>
+      <!-- 
       <class name="patientClinic.PatientJournal"/>
+      
       <class name="patientClinic.PatientResources"/>
       <class name="patientClinic.PatientNotes"/>
       <class name="patientClinic.PatientMessage"/>
       <class name="patientClinic.PatientCalendar"/>
+      --> 
       
     </classes>
   </test> <!-- Test -->
