@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="Suite" parallel="tests" thread-count= "2">
   <test name="Test">
     <classes>
       
@@ -13,7 +13,15 @@
       <class name="patientClinic.PatientMessage"/>
       <class name="patientClinic.PatientCalendar"/>
       --> 
+         
+     </classes>
+     </test>
+    <test name="FAQ">
+    <classes>
       
+      <class name="practitionerClinic.FAQ_Builder"/>
+   
     </classes>
+   
   </test> <!-- Test -->
 </suite> <!-- Suite -->

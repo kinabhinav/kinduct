@@ -31,125 +31,60 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">64.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">27.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">practitionerClinic.FAQ_Builder</td><td><a href="#m1"><b>create_faq_builder_Practitioner</b>  </a></td><td class="numi">1</td><td>1463684036511</td><td class="numi">5568</td></tr><tr class="failedodd"><td><a href="#m2"><b>delete_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684067291</td><td class="numi">23217</td></tr>
+<tr class="failedodd"><td rowspan="2">practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder</td><td><a href="#m1"><b>create_faq_builder_Patient</b>  </a></td><td class="numi">1</td><td>1463748146899</td><td class="numi">13438</td></tr><tr class="failedodd"><td><a href="#m2"><b>EPD_FAQ_Builder_Cancel_button</b>  </a></td><td class="numi">1</td><td>1463748160753</td><td class="numi">13271</td></tr>
 <tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">practitionerClinic.FAQ_Builder</td><td><a href="#m3"><b>Search_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684101029</td><td class="numi">1</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">practitionerClinic.FAQ_Builder</td><td><a href="#m4"><b>create_faq_builder_cancel_button</b>  </a></td><td class="numi">1</td><td>1463684042087</td><td class="numi">13396</td></tr><tr class="passedodd"><td><a href="#m5"><b>Search_Clear_faq_builder</b>  </a></td><td class="numi">1</td><td>1463684055486</td><td class="numi">11804</td></tr><tr class="passedodd"><td><a href="#m6"><b>faq_builder_sort_Question</b>  </a></td><td class="numi">1</td><td>1463684090520</td><td class="numi">10508</td></tr>
+<tr class="skippedodd"><td rowspan="1">practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder</td><td><a href="#m3"><b>assign_faq_builder</b>  </a></td><td class="numi">1</td><td>1463748174030</td><td class="numi">1</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">practitionerClinic.FAQ_Builder:create_faq_builder_Practitioner</h2>
+<h2 id="m1">practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder:create_faq_builder_Patient</h2>
 <div style="padding-left:3em">
-<p>Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 17824256-5190-0644-84e3-8e570cea8fcf</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-<br/>at practitionerClinic.PracLogin.login(PracLogin.java:75)
-<br/>at practitionerClinic.FAQ_Builder.create_faq_builder_Practitioner(FAQ_Builder.java:30)
-<br/>25 lines not shown
-<p>Caused by Connection reset</p>
-java.net.SocketInputStream.read(SocketInputStream.java:209)
-<br/>at java.net.SocketInputStream.read(SocketInputStream.java:141)
-<br/>at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
-<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
-<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
-<br/>at practitionerClinic.PracLogin.login(PracLogin.java:75)
-<br/>at practitionerClinic.FAQ_Builder.create_faq_builder_Practitioner(FAQ_Builder.java:30)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">practitionerClinic.FAQ_Builder:delete_faq_builder</h2>
-<div style="padding-left:3em">
-<p>Timed out after 10 seconds waiting for element to be clickable: By.xpath: .//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span
+<p>Element is not clickable at point (1442.683349609375, 17.433334350585938). Other element would receive the click: &lt;div class=&quot;profile-box user-icon&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 662 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e7d9b07-97ef-da46-b5db-2f8c4794a601</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-<br/>at practitionerClinic.PracLogin.wait(PracLogin.java:26)
-<br/>at practitionerClinic.FAQ_Builder.delete_faq_builder(FAQ_Builder.java:401)
-<br/>25 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span&quot;}
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e7d9b07-97ef-da46-b5db-2f8c4794a601
-*** Element info: {Using=xpath, value=.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span}</p>
-sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+Session ID: a44ef1f2-d144-ec4e-8091-81bb618c98d5</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 <br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 <br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-<br/>at practitionerClinic.PracLogin.wait(PracLogin.java:26)
-<br/>at practitionerClinic.FAQ_Builder.delete_faq_builder(FAQ_Builder.java:401)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder.create_faq_builder_Patient(Edit_Patient_Dashboard_FAQ_Builder.java:59)
 <br/>25 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;faq-list&apos;]/tbody/tr/td[2]/a/span&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/7w/qxkxstx926x6q8_5yzfzppz00000gp/T/anonymous3029563147001860646webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-<br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">practitionerClinic.FAQ_Builder:Search_faq_builder</h2>
+<h2 id="m2">practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder:EPD_FAQ_Builder_Cancel_button</h2>
+<div style="padding-left:3em">
+<p>Element is not clickable at point (1442.683349609375, 17.433334350585938). Other element would receive the click: &lt;div class=&quot;profile-box user-icon&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 82 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;MacBook-Pro-3.local&apos;, ip: &apos;10.100.25.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.4&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 130809df-d837-2448-8b20-85683cedf7ee</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+<br/>at practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder.EPD_FAQ_Builder_Cancel_button(Edit_Patient_Dashboard_FAQ_Builder.java:319)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">practitionerClinic.FAQ_Builder:faq_builder_sort_Question</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">practitionerClinic.FAQ_Builder:Search_Clear_faq_builder</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">practitionerClinic.FAQ_Builder:create_faq_builder_cancel_button</h2>
+<h2 id="m3">practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder:assign_faq_builder</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

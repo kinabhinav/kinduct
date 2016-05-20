@@ -220,14 +220,14 @@ public void Search_faq_builder() throws Exception
 	
 	//Search button
 	
-	//login.wait(".//*[@id='faq-list-search']");
+	login.wait(".//*[@id='faq-list-search']");
 	
-	//login.driver.findElement(By.xpath(".//*[@id='faq-list-search']")).click();
+	login.driver.findElement(By.xpath(".//*[@id='faq-list-search']")).click();
 	
-	//
-	login.wait(".//*[@id='faq-search-clear']");
 	
-	login.driver.findElement(By.xpath(".//*[@id='faq-search-clear']")).click();
+	//login.wait(".//*[@id='faq-search-clear']");
+	
+	//login.driver.findElement(By.xpath(".//*[@id='faq-search-clear']")).click();
 	
 	//verification  
 	
@@ -394,13 +394,13 @@ public void delete_faq_builder() throws Exception
 	
 	//Delete button
 	
-	//login.wait(".//*[@id='faq-list']/tbody/tr/td[6]/a/span");
+	login.wait(".//*[@id='faq-list']/tbody/tr/td[6]/a/span");
 	
-	//login.driver.findElement(By.xpath(".//*[@id='faq-list']/tbody/tr/td[6]/a/span")).click();
+	login.driver.findElement(By.xpath(".//*[@id='faq-list']/tbody/tr/td[6]/a/span")).click();
 	
-	login.wait(".//*[@id='faq-list']/tbody/tr/td[2]/a/span");
+	//login.wait(".//*[@id='faq-list']/tbody/tr/td[2]/a/span");
 	
-	login.driver.findElement(By.xpath(".//*[@id='faq-list']/tbody/tr/td[2]/a/span")).click();
+	//login.driver.findElement(By.xpath(".//*[@id='faq-list']/tbody/tr/td[2]/a/span")).click();
 	
 	
 	Alert alert = login.driver.switchTo().alert();
@@ -568,12 +568,12 @@ public static void main(String[] args) throws Exception
 	//login.driver.close();
 	
 }	
+*/
+//@Test(priority=7,dependsOnMethods={"create_faq_builder_Patient"})
 
-@Test(priority=7,dependsOnMethods={"create_faq_builder_Patient"})
+//public void assign_faq_builder() throws Exception
 
-public void assign_faq_builder() throws Exception
-
-//public static void main(String[] args) throws Exception
+public static void main(String[] args) throws Exception
 
 {
 	
@@ -673,6 +673,6 @@ public void assign_faq_builder() throws Exception
 	login.driver.close();
 }
 
-*/
+
 }
 
