@@ -3,6 +3,7 @@ package practitionerClinic;
 import org.testng.annotations.Test;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,15 +19,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class PracLogin {
 	
 	public  WebDriver driver;  
-	public void wait(  String text)
-		
-		{
-		
-		 
-				(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(text)));
-		
+	public boolean wait(String xpath) {
+	    turnOffImplicitWaits();
+	    boolean result = ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)).apply(driver);
+	    turnOnImplicitWaits();
+	    return result;
+	}
+	
+	public boolean isElementHiddenNow(String xpath) 
+	{
+		 turnOffImplicitWaits();
+		    boolean result = ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)).apply(driver);
+		    turnOnImplicitWaits();
+		    return result;
+	}
 
-		}
+	private void turnOffImplicitWaits() {
+	    driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+	}
+
+	private void turnOnImplicitWaits() {
+	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	}
 		
 		
 		@Test
@@ -52,7 +66,7 @@ public class PracLogin {
 			
 			driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("L3@d3r!");
 			
-			wait(".//*[@id='login_form']/div[3]/div/button");
+			isElementHiddenNow(".//*[@id='login_form']/div[3]/div/button");
 			
 			//Login button
 			
@@ -76,7 +90,7 @@ public class PracLogin {
 			
 			//wait(".//*[@id='link_83356']");
 			
-			wait(".//*[@id='org_chart']/ul/li/ul/li[11]/a");
+			isElementHiddenNow(".//*[@id='org_chart']/ul/li/ul/li[11]/a");
 			
 			//Kinduct Clinic
 			
@@ -94,7 +108,7 @@ public class PracLogin {
 	        js.executeScript("javascript:window.scrollBy(250,350)");
 			
 			//(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")));
-			wait(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]");
+	        isElementHiddenNow(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]");
 
 			driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")).click();
 			

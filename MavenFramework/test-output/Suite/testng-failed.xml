@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <test name="FAQ(failed)" parallel="tests">
     <classes>
-      <class name="patientClinic.PatientResources">
+      <class name="practitionerClinic.FAQ_Builder">
         <methods>
-          <include name="Edit_Resources"/>
-          <include name="Resources_Delete"/>
-          <include name="Resources_Edit_Cancel_link"/>
+          <include name="create_faq_builder_Practitioner"/>
+          <include name="Search_Clear_faq_builder"/>
+          <include name="Search_faq_builder"/>
+          <include name="delete_faq_builder"/>
         </methods>
-      </class> <!-- patientClinic.PatientResources -->
+      </class> <!-- practitionerClinic.FAQ_Builder -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FAQ(failed) -->
 </suite> <!-- Failed suite [Suite] -->

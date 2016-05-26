@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder">
+      <class name="practitionerClinic.Practitioner_Assign_Survey">
         <methods>
-          <include name="EPD_FAQ_Builder_Cancel_button"/>
-          <include name="create_faq_builder_Patient"/>
-          <include name="assign_faq_builder"/>
+          <include name="assign_survey"/>
         </methods>
-      </class> <!-- practitionerClinic.Edit_Patient_Dashboard_FAQ_Builder -->
+      </class> <!-- practitionerClinic.Practitioner_Assign_Survey -->
+      <class name="practitionerClinic.PractitionerSurvey">
+        <methods>
+          <include name="create_survey"/>
+        </methods>
+      </class> <!-- practitionerClinic.PractitionerSurvey -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
