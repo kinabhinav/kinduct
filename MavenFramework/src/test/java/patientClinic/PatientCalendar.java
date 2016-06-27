@@ -5,6 +5,7 @@ import org.testng.AssertJUnit;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -18,7 +19,7 @@ public class PatientCalendar {
 	@Test (priority=1)
 	public void Calendar_Add_Event () throws Exception
 	
-	
+	//public static void main(String [] args) throws Exception
 	{
 		Login login = new Login();
 		
@@ -31,9 +32,9 @@ public class PatientCalendar {
 		
 		//Add Event
 		
-		login.wait(".//*[@id='content']/article/div[3]/div[2]/a[1]");
+		login.wait(".//*[@id='content']/article/div[4]/div[2]/a[1]/span");
 		
-		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).click();
+		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).click();
 		
 		login.wait(".//*[@id='type']");
 		
@@ -78,17 +79,17 @@ public class PatientCalendar {
 		
 		//add event button verification
 		
-		login.wait(".//*[@id='content']/article/div[3]/div[2]/a[1]");
+		login.wait(".//*[@id='content']/article/div[4]/div[2]/a[1]/span");
 		
-		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed())
+		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed())
 		{
 			
 			
 			  Excel e = new Excel();
 				
-				e.excelpatient(67,72,"PASSED");
+				//e.excelpatient(67,72,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -96,14 +97,14 @@ public class PatientCalendar {
 			{
 				Excel e = new Excel();
 				
-				e.excelpatient(67,72,"FAILED");
+				//e.excelpatient(67,72,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
 		
-		
+		//login.driver.close();
 		
 	}
 	
@@ -123,9 +124,9 @@ public class PatientCalendar {
 		
 		//Add Event
 		
-		login.wait(".//*[@id='content']/article/div[3]/div[2]/a[1]");
+		login.wait(".//*[@id='content']/article/div[4]/div[2]/a[1]/span");
 		
-		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).click();
+		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).click();
 		
 		//Cancel  
 		
@@ -135,17 +136,17 @@ public class PatientCalendar {
 		
 		//add event button verification
 		
-				login.wait(".//*[@id='content']/article/div[3]/div[2]/a[1]");
+				login.wait(".//*[@id='content']/article/div[4]/div[2]/a[1]/span");
 				
-				if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed())
+				if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed())
 				{
 					
 					
 					  Excel e = new Excel();
 						
-						e.excelpatient(72,74,"PASSED");
+						//e.excelpatient(72,74,"PASSED");
 						//Assert.assertEquals(text, "Automation Testing Note");
-						AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+						Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed(),true);
 						login.driver.close();
 						
 					}
@@ -153,9 +154,9 @@ public class PatientCalendar {
 					{
 						Excel e = new Excel();
 						
-						e.excelpatient(72,74,"FAILED");
+						//e.excelpatient(72,74,"FAILED");
 						//Assert.assertEquals(text, "Automation Testing Note");
-						AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
+						Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[1]/span")).isDisplayed(),true);
 						login.driver.close();
 						
 					}
@@ -177,37 +178,24 @@ public class PatientCalendar {
 		
 		//Export
 		
-		login.wait(".//*[@id='content']/article/div[3]/div[2]/a[2]");
+		login.wait(".//*[@id='content']/article/div[4]/div[2]/a[2]/span");
 		
-		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[2]")).click();
+		login.driver.findElement(By.xpath(".//*[@id='content']/article/div[4]/div[2]/a[2]/span")).click();
+		
+		Thread.sleep(2000);
+		
+		login.driver.switchTo().activeElement().click();
+		
+		login.driver.close();
+
+		
 		
 
-		login.wait(".//*[@id='content']/article/div[3]/div[2]/a[1]");
-		
-		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed())
-		{
-			
-			
-			  Excel e = new Excel();
-				
-				e.excelpatient(74,75,"PASSED");
-				//Assert.assertEquals(text, "Automation Testing Note");
-				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
-				login.driver.close();
-				
-			}
-			else
-			{
-				Excel e = new Excel();
-				
-				e.excelpatient(74,75,"FAILED");
-				//Assert.assertEquals(text, "Automation Testing Note");
-				AssertJUnit.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[3]/div[2]/a[1]")).isDisplayed(),true);
-				login.driver.close();
-				
-			}
 		
 		
-	}
+		
+		}
+
+	
 
 }

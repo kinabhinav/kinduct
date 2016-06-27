@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.phantomjs.PhantomJSDriver;
 //import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -43,10 +44,10 @@ public class PracLogin {
 	}
 		
 		
-		@Test
+		@Test(invocationCount=1,threadPoolSize = 1)
 		public  void login() throws Exception
 		{
-			driver = new FirefoxDriver(); 
+			//driver = new FirefoxDriver(); 
 	/*	File src =  new File("/Users/abhatnagar/phantomjs-2.1.1-macosx/bin/phantomjs") ;
 			 
 			System.setProperty ("phantomjs.binary.path", src.getAbsolutePath());
@@ -54,6 +55,9 @@ public class PracLogin {
 
 			driver = new PhantomJSDriver();  //*[@id="users"]/tbody/tr[5]/td[5]/a[3]/span[1]
 		*/	
+			System.setProperty("webdriver.chrome.driver", "/Users/abhatnagar/Downloads/chromedriver2");
+			
+			driver = new ChromeDriver();
 			
 			driver.get("https://qa9.kinductdev.com/login");
 			
@@ -73,34 +77,23 @@ public class PracLogin {
 			
 			
 			driver.findElement(By.xpath(".//*[@id='login_form']/div[3]/div/button")).click();
-			
-			
-			
-		//	WebElement Image = driver.findElement(By.xpath(".//*[@id='link_83356']"));
-			
-			//Point point = Image.getLocation();
-			
-			//int xcord = point.getX();
-			
-			//System.out.println(xcord);
-			//int ycord = point.getY();
-			//System.out.println(ycord);
+
 			
 			((JavascriptExecutor)driver).executeScript("71", 413);
 			
 			//wait(".//*[@id='link_83356']");
 			
-			isElementHiddenNow(".//*[@id='org_chart']/ul/li/ul/li[11]/a");
+			isElementHiddenNow(".//*[@id='org_chart']/ul/li/ul/li[8]/a");
 			
 			//Kinduct Clinic
 			
 			//driver.findElement(By.xpath(".//*[@id='link_83356']")).click();
 			
-			driver.findElement(By.xpath(".//*[@id='org_chart']/ul/li/ul/li[11]/a")).click();
+			driver.findElement(By.xpath(".//*[@id='org_chart']/ul/li/ul/li[8]/a")).click();
 			
 			//Demo Practitioner
 			
-			WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]"));
+			WebElement element =driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]"));
 			
 			////*[@id="users"]/tbody/tr[5]/td[5]/a[3]/span[1]
 			
@@ -108,9 +101,9 @@ public class PracLogin {
 	        js.executeScript("javascript:window.scrollBy(250,350)");
 			
 			//(new WebDriverWait(driver,10)).until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")));
-	        isElementHiddenNow(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]");
+	        isElementHiddenNow(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]");
 
-			driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[6]/td[5]/a[3]/span[1]")).click();
+			driver.findElement(By.xpath(".//*[@id='users']/tbody/tr[5]/td[5]/a[3]/span[1]")).click();
 			
 			/*
 			Status s = new Status();

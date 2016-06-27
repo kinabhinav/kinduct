@@ -2,7 +2,11 @@ package patientClinic;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -34,6 +38,8 @@ public class PatientMessage {
 		
 		login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).click();
 		
+
+		
 		//Select a recipient  
 		
 		login.wait(".//*[@id='select_link']");
@@ -48,9 +54,9 @@ public class PatientMessage {
 	
 		// Select button 
 		
-		login.wait(".//*[@id='multi_select_user']/div[2]/div/div[3]/button");
+		login.wait(".//*[@id='multi_select_user']/div/div/div[3]/button");
 		
-		login.driver.findElement(By.xpath(".//*[@id='multi_select_user']/div[2]/div/div[3]/button")).click();
+		login.driver.findElement(By.xpath(".//*[@id='multi_select_user']/div/div/div[3]/button")).click();
 		
 		// Subject
 		
@@ -58,37 +64,54 @@ public class PatientMessage {
 		
 		login.driver.findElement(By.xpath(".//*[@id='subject']")).sendKeys("Post a Message Subject Test");
 		
-				
 		//Message
 		
-		login.driver.switchTo().frame(login.driver.findElement(By.cssSelector("iframe[title='Rich text editor, body_html']")));
 		
-		//(new WebDriverWait(login.driver,10)).until(ExpectedConditions.elementToBeClickable(By.className("cke_show_borders")));
+
+		//(new WebDriverWait(login.driver,10)).until(ExpectedConditions.elementToBeClickable(By.cssSelector("iframe[title='Rich Text Editor, body_html']")));
 		
-						
-		login.driver.findElement(By.className("cke_show_borders")).sendKeys("Post a Message Test ");
+		//login.driver.switchTo().frame(login.driver.findElement(By.cssSelector("iframe[title='Rich Text Editor, body_html']")));
+				
+				//(new WebDriverWait(login.driver,10)).until(ExpectedConditions.elementToBeClickable(By.className("cke_show_borders")));
+		try{		
+					
+			login.driver.switchTo().frame(0);
+		}
 		
-		login.driver.switchTo().defaultContent();
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		finally{
+			
+			//login.driver.findElement(By.className("cke_editable cke_editable_themed cke_contents_ltr cke_show_borders")).sendKeys("Post a Message Test ");
+			login.driver.findElement(By.cssSelector("body[class='cke_editable cke_editable_themed cke_contents_ltr cke_show_borders']"));
+			//body class="cke_editable cke_editable_themed cke_contents_ltr cke_show_borders"
+		}
+		//login.driver.switchTo().defaultContent();
+				System.out.println("test");
+		//Message
+			login.driver.switchTo().defaultContent();
 		
 		// Send button 
 		
-		login.wait(".//*[@id='submit_button']");
+		login.wait(".//*[@id='submit_button']/span[2]");
 		
-		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']/span[2]")).click();
 		
 		//
 		
-		login.wait(".//*[@id='content']/article/div[1]/a");
+		login.wait(".//*[@id='content']/article/header/div/a[2]");
 		
-		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed())
+		if (login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed())
 		{
 			
 			
 			  Excel e = new Excel();
 				
-				e.excelpatient(57,61,"PASSED");
+				//e.excelpatient(57,61,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -96,9 +119,9 @@ public class PatientMessage {
 			{
 				Excel e = new Excel();
 				
-				e.excelpatient(57,61,"FAILED");
+				//e.excelpatient(57,61,"FAILED");
 				//Assert.assertEquals(text, "Automation Testing Note");
-				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/div[1]/a")).isDisplayed(),true);
+				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed(),true);
 				login.driver.close();
 				
 			}
@@ -126,9 +149,9 @@ public class PatientMessage {
 		login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).click();
 		// Cancel button 
 		
-		login.wait(".//*[@id='cancel']");
+		login.wait(".//*[@id='cancel']/span[2]");
 		
-		login.driver.findElement(By.xpath(".//*[@id='cancel']")).click();
+		login.driver.findElement(By.xpath(".//*[@id='cancel']/span[2]")).click();
 		
 		//
 		
@@ -140,7 +163,7 @@ public class PatientMessage {
 			
 			  Excel e = new Excel();
 				
-				e.excelpatient(61,63,"PASSED");
+				//e.excelpatient(61,63,"PASSED");
 				//Assert.assertEquals(text, "Automation Testing Note");
 				Assert.assertEquals(login.driver.findElement(By.xpath(".//*[@id='content']/article/header/div/a[2]")).isDisplayed(),true);
 				login.driver.close();
@@ -158,7 +181,7 @@ public class PatientMessage {
 			}
 	}
 	
-	@Test (priority=3)
+	//@Test (priority=3)
 	public void Message_Hide () throws Exception
 	
 	
@@ -190,7 +213,7 @@ public class PatientMessage {
 		{
 			  Excel e = new Excel();
 				
-				e.excelpatient(63,64,"PASSED");
+				//e.excelpatient(63,64,"PASSED");
 				
 				Assert.assertFalse(false);
 				
@@ -201,7 +224,7 @@ public class PatientMessage {
 		{
 			Excel e = new Excel();
 			
-			e.excelpatient(63,64,"FAILED");
+			//e.excelpatient(63,64,"FAILED");
 			
 			Assert.assertFalse(false);
 			
@@ -210,7 +233,7 @@ public class PatientMessage {
 		}
 	
 	}
-	@Test (priority=4)
+	//@Test (priority=4)
 	public void Message_Show () throws Exception
 	
 	
@@ -242,7 +265,7 @@ public class PatientMessage {
 		{
 			  Excel e = new Excel();
 				
-				e.excelpatient(64,65,"PASSED");
+				//e.excelpatient(64,65,"PASSED");
 				
 				Assert.assertTrue(true);
 				
@@ -253,7 +276,7 @@ public class PatientMessage {
 		{
 			Excel e = new Excel();
 			
-			e.excelpatient(64,65,"FAILED");
+			//e.excelpatient(64,65,"FAILED");
 			
 			Assert.assertTrue(true);
 			
@@ -263,7 +286,7 @@ public class PatientMessage {
 	
 	}
 	
-	@Test (priority=5)
+	//@Test (priority=5)
 	public void Message_Delete() throws Exception
 	
 	
@@ -299,7 +322,7 @@ public class PatientMessage {
 		{
 			  Excel e = new Excel();
 				
-				e.excelpatient(64,65,"PASSED");
+				//e.excelpatient(64,65,"PASSED");
 				
 				Assert.assertFalse(false);
 				
@@ -310,7 +333,7 @@ public class PatientMessage {
 		{
 			Excel e = new Excel();
 			
-			e.excelpatient(64,65,"FAILED");
+			//e.excelpatient(64,65,"FAILED");
 			
 			Assert.assertFalse(false);
 			

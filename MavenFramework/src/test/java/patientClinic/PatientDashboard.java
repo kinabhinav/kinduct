@@ -52,7 +52,7 @@ public class PatientDashboard {
 	}
 
 	
-	@Test (priority=2)
+	//@Test (priority=2)
 	public void procedure() throws Exception
 	{
 		Login login = new Login();
@@ -81,7 +81,7 @@ public class PatientDashboard {
 		
 	}
 	
-	@Test (priority=3)
+	//@Test (priority=3)
 	public void anatomy() throws Exception
 	
 	//public static void main(String [] args)  throws Exception
@@ -114,7 +114,7 @@ public class PatientDashboard {
 		
 	}
 	
-	@Test (priority=4)
+	//@Test (priority=4)
 	public void Functional_anatomy() throws Exception
 	
 	//public static void main(String [] args)  throws Exception
@@ -148,7 +148,7 @@ public class PatientDashboard {
 		
 	}
 	
-	@Test (priority=5)
+	//@Test (priority=5)
 	public void FAQ() throws Exception
 	
 	//public static void main(String [] args)  throws Exception
@@ -186,7 +186,7 @@ public class PatientDashboard {
 	}
 	
 	
-	@Test (priority=6)
+	//@Test (priority=6)
 	public void Recent_Activity() throws Exception
 	
 	//public static void main(String [] args)  throws Exception
@@ -223,7 +223,7 @@ public class PatientDashboard {
 		
 	}
 	
-	@Test (priority=7)
+	//@Test (priority=7)
 	public void FMS_Exercise_Program() throws Exception
 	
 	//public static void main(String [] args)  throws Exception
@@ -287,7 +287,7 @@ public class PatientDashboard {
 		s.statusTitlepatient(14, 15, login.driver, title);
 	}
 	//Meal Options
-	@Test (priority=9)
+	//@Test (priority=9)
 	public void Meal_Options() throws Exception
 	
 	//public static void main(String [] args)  throws Exception

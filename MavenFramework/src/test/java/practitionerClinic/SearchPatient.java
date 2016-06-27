@@ -45,7 +45,7 @@ public class SearchPatient {
 			
 			  Excel e = new Excel();
 				
-				e.excel(6,8,"PASS");
+				//e.excel(6,8,"PASS");
 				
 				Assert.assertTrue(true);
 				
@@ -56,7 +56,7 @@ public class SearchPatient {
 			{
 				Excel e = new Excel();
 				
-				e.excel(6,8,"FAIL");
+				//e.excel(6,8,"FAIL");
 				
 				Assert.assertTrue(true);
 				
@@ -107,7 +107,7 @@ public class SearchPatient {
 			
 			  Excel e = new Excel();
 				
-				e.excel(9,12,"PASS");
+				//e.excel(9,12,"PASS");
 				
 				Assert.assertTrue(true);
 				
@@ -118,7 +118,7 @@ public class SearchPatient {
 			{
 				Excel e = new Excel();
 				
-				e.excel(9,12,"FAIL");
+				//e.excel(9,12,"FAIL");
 				
 				Assert.assertTrue(true);
 				

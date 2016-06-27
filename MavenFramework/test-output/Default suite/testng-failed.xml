@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practitionerClinic.Practitioner_Assign_Survey">
+      <class name="patientClinic.PatientMessage">
         <methods>
-          <include name="assign_survey"/>
+          <include name="Post_Message"/>
         </methods>
-      </class> <!-- practitionerClinic.Practitioner_Assign_Survey -->
-      <class name="practitionerClinic.PractitionerSurvey">
-        <methods>
-          <include name="create_survey"/>
-        </methods>
-      </class> <!-- practitionerClinic.PractitionerSurvey -->
+      </class> <!-- patientClinic.PatientMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

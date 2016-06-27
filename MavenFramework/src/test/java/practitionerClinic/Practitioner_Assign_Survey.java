@@ -28,7 +28,8 @@ public class Practitioner_Assign_Survey {
 
 	 driver = new FirefoxDriver();
 	 WaitForElement w= new WaitForElement();
-		driver.get("https://qa9.kinductdev.com/login");
+		
+	 driver.get("https://qa9.kinductdev.com/login");
 		
 		driver.manage().window().maximize();
 		

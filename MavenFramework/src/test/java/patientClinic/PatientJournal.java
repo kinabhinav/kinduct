@@ -27,9 +27,9 @@ public class PatientJournal {
 		
 		//View Report
 		
-		login.wait(".//*[@id='journal_form']/header/div/div[2]/a");
+		login.wait(".//*[@id='journal_form']/header/div/div[2]/a/span[2]");
 		
-		login.driver.findElement(By.xpath(".//*[@id='journal_form']/header/div/div[2]/a")).click();
+		login.driver.findElement(By.xpath(".//*[@id='journal_form']/header/div/div[2]/a/span[2]")).click();
 		
 		String text = login.driver.findElement(By.xpath(".//*[@id='journal_form']/header/div[1]/a")).getText();
 		
@@ -44,8 +44,8 @@ public class PatientJournal {
 			
 			  Excel e = new Excel();
 				
-				e.excelpatient(26,30,"PASS");
-				AssertJUnit.assertEquals(text, "new journal entry");
+				//e.excelpatient(26,30,"PASS");
+				Assert.assertEquals(text, "new journal entry");
 				login.driver.close();
 				
 			}
@@ -53,8 +53,8 @@ public class PatientJournal {
 			{
 				Excel e = new Excel();
 				
-				e.excelpatient(26,30,"FAIL");
-				AssertJUnit.assertEquals(text, "new journal entry");
+				//e.excelpatient(26,30,"FAIL");
+				Assert.assertEquals(text, "new journal entry");
 				login.driver.close();
 				
 			}
@@ -75,9 +75,9 @@ public class PatientJournal {
 		
 		//View Report
 		
-		login.wait(".//*[@id='journal_form']/header/div/div[2]/a");
+		login.wait(".//*[@id='journal_form']/header/div/div[2]/a/span[2]");
 		
-		login.driver.findElement(By.xpath(".//*[@id='journal_form']/header/div/div[2]/a")).click();
+		login.driver.findElement(By.xpath(".//*[@id='journal_form']/header/div/div[2]/a/span[2]")).click();
 		
 		//new journal entry
 		login.wait(".//*[@id='journal_form']/header/div[1]/a");
@@ -86,17 +86,17 @@ public class PatientJournal {
 		
 		//Sleep
 		
-		login.wait(".//*[@id='result17524']");
+		login.wait(".//*[@id='result17491']");
 		
-		login.driver.findElement(By.xpath(".//*[@id='result17524']")).clear();
-		login.driver.findElement(By.xpath(".//*[@id='result17524']")).sendKeys("3");
+		login.driver.findElement(By.xpath(".//*[@id='result17491']")).clear();
+		login.driver.findElement(By.xpath(".//*[@id='result17491']")).sendKeys("3");
 		
 		//Soreness
-		login.wait(".//*[@id='result17525']");
+		login.wait(".//*[@id='result17492']");
 		
-		login.driver.findElement(By.xpath(".//*[@id='result17525']")).clear();
+		login.driver.findElement(By.xpath(".//*[@id='result17492']")).clear();
 		
-		login.driver.findElement(By.xpath(".//*[@id='result17525']")).sendKeys("3");		
+		login.driver.findElement(By.xpath(".//*[@id='result17492']")).sendKeys("3");		
 
 		
 		//Comment
@@ -109,15 +109,15 @@ public class PatientJournal {
 		
 		//Submit
 		
-		login.wait(".//*[@id='submit_button']");
+		login.wait(".//*[@id='submit_button']/span[2]");
 		
-		login.driver.findElement(By.xpath(".//*[@id='submit_button']")).click();
+		login.driver.findElement(By.xpath(".//*[@id='submit_button']/span[2]")).click();
 		
 		
 		
-		login.wait(".//*[@id='journal_form']/div[13]/div");
+		login.wait(".//*[@id='journal_form']/div[12]/div");
 		
-		String text1 = login.driver.findElement(By.xpath(".//*[@id='journal_form']/div[13]/div")).getText();
+		String text1 = login.driver.findElement(By.xpath(".//*[@id='journal_form']/div[12]/div")).getText();
 		
 		System.out.println(text1);
 		
@@ -127,9 +127,9 @@ public class PatientJournal {
 			System.out.println("53425");
 			  Excel e = new Excel();
 				
-				e.excelpatient(30,31,"PASS");
+			//	e.excelpatient(30,31,"PASS");
 				//sa1.assertEquals(text1, "Journal entry has been saved");
-				AssertJUnit.assertEquals(text1,"Journal entry has been saved");
+				Assert.assertEquals(text1,"Journal entry has been saved");
 				login.driver.close();
 				
 			}
@@ -137,9 +137,9 @@ public class PatientJournal {
 			{
 				Excel e = new Excel();
 				
-				e.excelpatient(30,31,"FAIL");
+				//e.excelpatient(30,31,"FAIL");
 				//sa1.assertEquals(text1, "Journal entry has been saved");
-				AssertJUnit.assertEquals(text1,"Journal entry has been saved");
+				Assert.assertEquals(text1,"Journal entry has been saved");
 				login.driver.close();
 				
 			}
