@@ -5,13 +5,14 @@ import org.testng.annotations.Test;
 import pageobject.Login;
 import pageobject.Organizations;
 import pageobject.PatriotsHome;
+import pageobject.ProfileNotesPage;
 import pageobject.ProfilePage;
 import pageobject.ProfileProgramPage;
 
-public class ProgramTab {
+public class NotesTab {
 	
 	@Test
-	public void program()
+	public void notes() throws Exception
 	
 		{
 			
@@ -22,13 +23,20 @@ public class ProgramTab {
 			PatriotsHome pat = new PatriotsHome();
 			ProfilePage p = new ProfilePage();
 			
-			ProfileProgramPage pp = new ProfileProgramPage();
+			ProfileNotesPage pp = new ProfileNotesPage();
 			
 			
 			org.Patriots(login.driver);
 			pat.Home(login.driver);
-			p.Program(login.driver);
-			pp.log(login.driver);
+			p.Notes(login.driver);
+			
+			//pp.addnote(login.driver);
+			
+			//pp.addnote_Cancel(login.driver);
+			
+			pp.delete(login.driver);
+			
+			//pp.edit(login.driver);
 		}
 
 }
